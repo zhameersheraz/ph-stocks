@@ -1,36 +1,94 @@
 # ph-stocks
 
-A live snapshot of top Philippine Stock Exchange (PSE) tickers. Auto-updates every 30 minutes via GitHub Actions.
+Philippine Stock Exchange snapshot, auto-updated every 30 minutes.
 
-## What
+- **Source**: [PSE Edge](https://edge.pse.com.ph) — official disclosure portal of the PSE
+- **Refresh**: GitHub Actions cron every 30 minutes, plus on-demand via `repository_dispatch`
+- **Output**: `stocks.md` (human-readable) and `stocks.json` (machine-readable)
+- **Stack**: Python stdlib only — no external dependencies, no API keys
 
-Pulls current price, % change, and previous close for ~20 PSE-listed companies from Yahoo Finance, writes them to:
+## What it tracks
 
-- [`stocks.json`](./stocks.json) — raw data
-- [`stocks.md`](./stocks.md) — human-readable Markdown table
+21 Philippine blue chips spanning financials, industrials, holding firms,
+property, services, and telecom. Each entry includes last traded price, open,jhigh, low, previous close, change, volume, value, market cap, 52-week range,
+and the as-of timestamp straight from PSE Edge.
 
-## How
+## How it works
 
-1. [`update.py`](./update.py) — fetches data via the [`yfinance`](https://github.com/ranaroussi/yfinance) Python library (Yahoo Finance PSE symbols, suffix `.PS`).
-2. [`.github/workflows/update.yml`](./.github/workflows/update.yml) — runs the script on `*/30 * * * *` cron, commits only if data changed.
-3. Optionally triggered externally by [cron-job.org](https://cron-job.org) via `repository_dispatch` (event type `tick`).
+1. `update.py` hits the public PSE Edge Stock Data page for each ticker.
+2. It parses the server-rendered HTML with regex (no JS, no auth, no challenge).
+3. It also fetches the Index Summary page for PSEi + sector indices + market summary.
+$. Writes `stocks.json` and `stocks.md`, then the workflow commits any change.
 
-## Why
+## Layout
 
-A small portfolio piece showing:
-- API integration (yfinance)
-- Scheduled automation (GitHub Actions)
-- Clean data output (JSON + Markdown)
-- Sensible error handling (failed tickers are skipped, not crashed)
+| File | Purpose |
+|------|---------|
+| `update.py` | Fetcher + parser + renderer. Pure Python stdlib. |
+| `.github/workflows/update.yml` | 30-min cron + manual + dispatch triggers. |
+| `stocks.md` | Latest snapshot (markdown). |
+| `stocks.json` | Latest snapshot (JSON, schema: see below). |
 
-## Tickers tracked
+## Schema (`stocks.json`)
 
-SM, SMPH, JFC, AC, ALI, BDO, BPI, GLO, MPI, MBT, URC, TEL, JGS, LTG, PGOLD, RRHI, GTCAP, SECB, CHIB, MEG
+```json
+{
+  "generated_utc": "2026-09-27 18:45:12",
+  "source": "https://edge.pse.com.ph",
+  "index": {
+    "as_of": "Sep 25, 2026 5:29 PM",
+    "market_status": "CLOSED",
+    "indices": [{"name": "PSEi", "value": 5825.97, "change": 95.95, "change_pct": 1.67}],
+    "market_summary": {"Total Volume": 4059619816, ...}
+  },
+  "stocks": [
+    {
+      "symbol": "JFC",
+      "name": "Jollibee Foods Corporation",
+      "as_of": "Sep 25, 2026 02:50 PM",
+      "status": "Open",
+      "last_traded_price": 145.00,
+      "open": 140.50,
+      "high": 145.00,
+      "low": 140.00,
+      "previous_close": 140.50,
+      "previous_close_date": "Sep 24, 2026",
+      "change": "up",
+      "change_amount": 4.50,
+      "change_pct": 3.20,
+      "volume": 244250,
+      "value": 34939033.00,
+      "average_price": 143.05,
+      "fifty_two_week_high": 224.40,
+      "fifty_two_week_low": 119.70,
+      "market_cap": 157458440482.00,
+      "outstanding_shares": 1120700644
+    }
+  ]
+}
+```
 
-## Notes
+## Local development
 
-- Prices in PHP from Yahoo Finance
-- No API key required
-- Runs on GitHub Actions free tier (public repo, unlimited minutes)
-- During PSE market hours (9:30 AM – 3:30 PM PHT) data is live; off-hours data is last available close
-- Failed tickers are listed in `stocks.md` under the warning line and excluded from the table
+```bash
+cd ~/projects/ph-stocks
+python3 update.py
+cat stocks.md
+```
+
+The script is safe to run as often as you like; each run is a ~13-second pass
+(~21 stock pages + 1 index page, 0.6s polite delay between requests).
+
+## Why not yfinance / Stooq?
+
+- **yfinance**: Philippine stocks not consistently covered. `.PS` suffix and
+  MIC tuple forms both return `Quote not found`.
+- **Stooq**: Gated by a Cloudflare-style JavaScript challenge; any plain HTTP
+  client gets a `<noscript>` HTML page back, not CSV.
+
+PSE Edge is the authoritative source — official exchange site, no challenge,
+no auth, public-facing HTML.
+
+## License
+
+Data is sourced from PSE Edge under their public terms of use. Code is MIT.
