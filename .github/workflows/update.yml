@@ -1,0 +1,38 @@
+name: update
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [tick]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance
+
+      - name: Run update
+        run: python update.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "zham"
+          git config user.email "zhameersheraztampugao@gmail.com"
+          git add stocks.json stocks.md
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "stocks: update snapshot"
+            git push
+          fi
