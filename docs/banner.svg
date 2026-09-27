@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1929"/>
+      <stop offset="100%" stop-color="#000814"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e88e5"/>
+      <stop offset="50%" stop-color="#0038a8"/>
+      <stop offset="100%" stop-color="#ce1126"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#26a69a" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#26a69a" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#ef5350" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ef5350" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="400" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#1a3a5c" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="100" x2="1280" y2="100"/>
+    <line x1="0" y1="200" x2="1280" y2="200"/>
+    <line x1="0" y1="300" x2="1280" y2="300"/>
+    <line x1="320" y1="0" x2="320" y2="400"/>
+    <line x1="640" y1="0" x2="640" y2="400"/>
+    <line x1="960" y1="0" x2="960" y2="400"/>
+  </g>
+
+  <!-- Candlestick chart pattern (background, faded) -->
+  <g opacity="0.35">
+    <line x1="700" y1="280" x2="700" y2="320" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="694" y="290" width="12" height="22" fill="#26a69a"/>
+    <line x1="725" y1="260" x2="725" y2="310" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="719" y="270" width="12" height="30" fill="#26a69a"/>
+    <line x1="750" y1="250" x2="750" y2="295" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="744" y="255" width="12" height="32" fill="#ef5350"/>
+    <line x1="775" y1="270" x2="775" y2="315" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="769" y="280" width="12" height="28" fill="#ef5350"/>
+    <line x1="800" y1="240" x2="800" y2="290" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="794" y="248" width="12" height="35" fill="#26a69a"/>
+    <line x1="825" y1="220" x2="825" y2="270" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="819" y="228" width="12" height="34" fill="#26a69a"/>
+    <line x1="850" y1="200" x2="850" y2="250" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="844" y="210" width="12" height="32" fill="#26a69a"/>
+    <line x1="875" y1="180" x2="875" y2="230" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="869" y="190" width="12" height="32" fill="#ef5350"/>
+    <line x1="900" y1="195" x2="900" y2="240" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="894" y="205" width="12" height="28" fill="#26a69a"/>
+    <line x1="925" y1="170" x2="925" y2="220" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="919" y="180" width="12" height="32" fill="#26a69a"/>
+    <line x1="950" y1="155" x2="950" y2="200" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="944" y="165" width="12" height="28" fill="#26a69a"/>
+    <line x1="975" y1="140" x2="975" y2="190" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="969" y="148" width="12" height="34" fill="#26a69a"/>
+    <line x1="1000" y1="155" x2="1000" y2="200" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="994" y="165" width="12" height="28" fill="#ef5350"/>
+    <line x1="1025" y1="135" x2="1025" y2="185" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="1019" y="145" width="12" height="32" fill="#26a69a"/>
+    <line x1="1050" y1="120" x2="1050" y2="170" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="1044" y="130" width="12" height="32" fill="#26a69a"/>
+    <line x1="1075" y1="105" x2="1075" y2="155" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="1069" y="115" width="12" height="32" fill="#26a69a"/>
+    <line x1="1100" y1="120" x2="1100" y2="165" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="1094" y="130" width="12" height="28" fill="#ef5350"/>
+    <line x1="1125" y1="100" x2="1125" y2="145" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="1119" y="110" width="12" height="28" fill="#26a69a"/>
+    <line x1="1150" y1="85" x2="1150" y2="135" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="1144" y="95" width="12" height="32" fill="#26a69a"/>
+    <line x1="1175" y1="95" x2="1175" y2="140" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="1169" y="105" width="12" height="28" fill="#ef5350"/>
+    <line x1="1200" y1="75" x2="1200" y2="120" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="1194" y="85" width="12" height="28" fill="#26a69a"/>
+    <line x1="1225" y1="60" x2="1225" y2="110" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="1219" y="70" width="12" height="32" fill="#26a69a"/>
+  </g>
+
+  <!-- Trend line (foreground) -->
+  <polyline points="700,310 750,275 800,250 850,225 900,200 950,170 1000,180 1050,140 1100,130 1150,100 1200,80 1250,55"
+            fill="none" stroke="url(#line)" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Title -->
+  <text x="80" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="84" font-weight="800" fill="#ffffff" letter-spacing="-2" filter="url(#glow)">ph-stocks</text>
+  <text x="82" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="22" font-weight="400" fill="#90caf9" letter-spacing="0.5">Philippine Stock Exchange · live snapshot</text>
+
+  <!-- Stats row -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="82" y="270" font-size="14" fill="#78909c" letter-spacing="2">PSEi</text>
+    <text x="82" y="300" font-size="32" font-weight="700" fill="#26a69a">5,825.97</text>
+    <text x="82" y="322" font-size="14" fill="#26a69a">▲ +95.95 (+1.67%)</text>
+
+    <text x="280" y="270" font-size="14" fill="#78909c" letter-spacing="2">TRACKED</text>
+    <text x="280" y="300" font-size="32" font-weight="700" fill="#ffffff">21</text>
+    <text x="280" y="322" font-size="14" fill="#90caf9">Philippine blue chips</text>
+
+    <text x="460" y="270" font-size="14" fill="#78909c" letter-spacing="2">REFRESH</text>
+    <text x="460" y="300" font-size="32" font-weight="700" fill="#ffffff">30m</text>
+    <text x="460" y="322" font-size="14" fill="#90caf9">via GitHub Actions</text>
+  </g>
+
+  <!-- Philippine flag accent strip -->
+  <rect x="0" y="390" width="426" height="3" fill="#0038a8"/>
+  <rect x="426" y="390" width="426" height="3" fill="#ffffff" opacity="0.9"/>
+  <rect x="852" y="390" width="428" height="3" fill="#ce1126"/>
+
+  <!-- PSE Edge badge -->
+  <g transform="translate(1180, 30)">
+    <rect x="-80" y="-22" width="80" height="36" rx="18" fill="none" stroke="#26a69a" stroke-width="1.5" opacity="0.7"/>
+    <text x="-40" y="2" font-family="-apple-system, sans-serif" font-size="11" font-weight="600"
+          fill="#26a69a" text-anchor="middle" letter-spacing="1">LIVE</text>
+  </g>
+</svg>
