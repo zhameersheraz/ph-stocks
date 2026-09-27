@@ -2,6 +2,9 @@
 
 ![banner](docs/banner.svg)
 
+> ## 📈 **[Live site → https://zhameersheraz.github.io/ph-stocks/](https://zhameersheraz.github.io/ph-stocks/)**
+> Auto-updated every 30 minutes — 21 Philippine blue chips from PSE Edge, with 90-day candlestick charts.
+
 Philippine Stock Exchange snapshot, auto-updated every 30 minutes.
 
 - **Source**: [PSE Edge](https://edge.pse.com.ph) — official disclosure portal of the PSE
