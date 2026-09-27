@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ph-stocks — Philippine Stock Exchange snapshot</title>
+<style>
+  :root {
+    --bg: #0a1929;
+    --bg2: #0f2438;
+    --fg: #e3f2fd;
+    --muted: #78909c;
+    --accent: #26a69a;
+    --down: #ef5350;
+    --border: #1a3a5c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: linear-gradient(135deg, #0a1929 0%, #000814 100%);
+    padding: 32px 24px 24px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+  header h1 { margin: 0 0 4px; font-size: 28px; font-weight: 800; letter-spacing: -1px; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+  main { max-width: 1200px; margin: 0 auto; padding: 24px; }
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .badge.closed { border-color: var(--muted); color: var(--muted); }
+  .indices, .market, .stocks {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  h2 { font-size: 16px; margin: 0 0 12px; font-weight: 700; color: var(--fg); letter-spacing: 0.5px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: right; padding: 8px 10px; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); }
+  td { border-bottom: 1px solid rgba(26,58,92,0.4); }
+  tr:last-child td { border-bottom: none; }
+  td.sym { font-weight: 700; color: var(--fg); }
+  td.up { color: var(--accent); }
+  td.down { color: var(--down); }
+  td.muted { color: var(--muted); }
+  footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 12px; }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    th, td { padding: 6px 6px; font-size: 12px; }
+    header h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ph-stocks</h1>
+  <p>Philippine Stock Exchange — live snapshot</p>
+</header>
+<main>
+  <div class="meta">
+    <span id="updated">Loading…</span>
+    <span id="status-badge" class="badge">…</span>
+  </div>
+
+  <section class="indices">
+    <h2>Indices</h2>
+    <table id="indices-table"><thead><tr>
+      <th>Index</th><th>Value</th><th>Change</th><th>% Change</th>
+    </tr></thead><tbody></tbody></table>
+  </section>
+
+  <section class="market">
+    <h2>Market Summary</h2>
+    <table id="market-table"><thead><tr>
+      <th>Metric</th><th>Value</th>
+    </tr></thead><tbody></tbody></table>
+  </section>
+
+  <section class="stocks">
+    <h2>Stocks</h2>
+    <table id="stocks-table"><thead><tr>
+      <th>Symbol</th><th>Last</th><th>Open</th><th>High</th><th>Low</th>
+      <th>Prev Close</th><th>Change</th><th>Volume</th><th>Mkt Cap</th>
+    </tr></thead><tbody></tbody></table>
+  </section>
+</main>
+<footer>
+  Auto-updated every 30 minutes by
+  <a href="https://github.com/zhameersheraz/ph-stocks/actions">GitHub Actions</a>
+  · Data source:
+  <a href="https://edge.pse.com.ph">PSE Edge</a>
+  · View
+  <a href="https://github.com/zhameersheraz/ph-stocks">source &amp; stocks.md</a>
+</footer>
+
+<script>
+const fmtMoney = v => v == null ? '—' : '₱' + v.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const fmtNum = v => {
+  if (v == null) return '—';
+  const a = Math.abs(v);
+  if (a >= 1e9) return (v / 1e9).toFixed(2) + 'B';
+  if (a >= 1e6) return (v / 1e6).toFixed(2) + 'M';
+  if (a >= 1e3) return (v / 1e3).toFixed(1) + 'K';
+  return v.toLocaleString('en-US');
+};
+const fmtChange = c => {
+  if (!c || !c.change) return { text: '—', dir: '' };
+  const arrow = c.change === 'up' ? '▲' : '▼';
+  const sign = c.change === 'up' ? '+' : '-';
+  const pct = c.change_pct != null ? sign + Math.abs(c.change_pct).toFixed(2) + '%' : '';
+  const amt = c.change_amount != null ? sign + Math.abs(c.change_amount).toFixed(2) : '';
+  return { text: `${arrow} ${amt} (${pct})`.trim(), dir: c.change };
+};
+
+async function load() {
+  try {
+    const r = await fetch('../stocks.json', {cache: 'no-store'});
+    if (!r.ok) throw new Error(r.status);
+    const data = await r.json();
+    render(data);
+  } catch (e) {
+    document.getElementById('updated').textContent = 'Failed to load stocks.json — ' + e.message;
+  }
+}
+
+function render(data) {
+  document.getElementById('updated').textContent =
+    'Last updated: ' + (data.generated_utc || 'unknown') + ' UTC';
+
+  if (data.index) {
+    const badge = document.getElementById('status-badge');
+    badge.textContent = (data.index.market_status || '—').toUpperCase();
+    badge.className = 'badge' + (data.index.market_status === 'Closed' ? ' closed' : '');
+
+    const ib = document.querySelector('#indices-table tbody');
+    ib.innerHTML = (data.index.indices || []).map(i => {
+      const cls = i.change_pct > 0 ? 'up' : i.change_pct < 0 ? 'down' : 'muted';
+      const chg = i.change != null ? (i.change >= 0 ? '+' : '') + i.change.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}) : '—';
+      const pct = i.change_pct != null ? (i.change_pct >= 0 ? '+' : '') + i.change_pct.toFixed(2) + '%' : '—';
+      return `<tr>
+        <td>${i.name}</td>
+        <td>${i.value != null ? i.value.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}) : '—'}</td>
+        <td class="${cls}">${chg}</td>
+        <td class="${cls}">${pct}</td>
+      </tr>`;
+    }).join('');
+
+    const mb = document.querySelector('#market-table tbody');
+    mb.innerHTML = Object.entries(data.index.market_summary || {}).map(([k, v]) =>
+      `<tr><td>${k}</td><td>${fmtNum(v)}</td></tr>`
+    ).join('');
+  }
+
+  const sb = document.querySelector('#stocks-table tbody');
+  sb.innerHTML = (data.stocks || []).slice().sort((a, b) => a.symbol.localeCompare(b.symbol)).map(q => {
+    const chg = fmtChange(q);
+    const cls = chg.dir === 'up' ? 'up' : chg.dir === 'down' ? 'down' : 'muted';
+    return `<tr>
+      <td class="sym">${q.symbol}</td>
+      <td>${fmtMoney(q.last_traded_price)}</td>
+      <td>${fmtMoney(q.open)}</td>
+      <td>${fmtMoney(q.high)}</td>
+      <td>${fmtMoney(q.low)}</td>
+      <td>${fmtMoney(q.previous_close)}</td>
+      <td class="${cls}">${chg.text}</td>
+      <td>${fmtNum(q.volume)}</td>
+      <td>${fmtNum(q.market_cap)}</td>
+    </tr>`;
+  }).join('');
+}
+
+load();
+</script>
+</body>
+</html>
