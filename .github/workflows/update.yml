@@ -18,12 +18,14 @@ jobs:
       - name: Run update
         run: python update.py
       - name: Sync to docs/ for GitHub Pages
-        run: cp stocks.json docs/stocks.json
+        run: |
+          cp stocks.json docs/stocks.json
+          cp history.json docs/history.json
       - name: Commit if changed
         run: |
           git config user.name  "zham"
           git config user.email "zhameersheraztampugao@gmail.com"
-          git add stocks.json stocks.md docs/stocks.json
+          git add stocks.json stocks.md docs/stocks.json docs/history.json
           if git diff --cached --quiet; then
             echo "No changes."
           else
