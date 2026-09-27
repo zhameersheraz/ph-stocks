@@ -13,7 +13,7 @@
     --fg: #e6edf3;
     --fg-dim: #8b949e;
     --fg-mute: #6e7681;
-    --accent: #2ea043;
+    --up: #2ea043;
     --down: #da3633;
     --flat: #8b949e;
   }
@@ -29,75 +29,36 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 32px 24px 64px; }
 
   /* ─── header ─── */
   header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
   .brand-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
-  .brand {
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    color: var(--fg);
-  }
-  .brand .dot { color: var(--accent); }
+  .brand { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; color: var(--fg); }
+  .brand .dot { color: var(--up); }
   .brand small { color: var(--fg-dim); font-weight: 400; margin-left: 10px; font-size: 13px; letter-spacing: 0; }
-  .meta {
-    font-size: 12px;
-    color: var(--fg-mute);
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
+  .meta { font-size: 12px; color: var(--fg-mute); display: flex; gap: 16px; align-items: center; }
   .meta .pill {
-    border: 1px solid var(--line);
-    padding: 2px 8px;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    color: var(--fg-dim);
-    border-radius: 2px;
+    border: 1px solid var(--line); padding: 2px 8px; font-size: 11px;
+    letter-spacing: 0.5px; color: var(--fg-dim); border-radius: 2px;
   }
-  .meta .pill.open { color: var(--accent); border-color: rgba(46,160,67,0.4); }
+  .meta .pill.open { color: var(--up); border-color: rgba(46,160,67,0.4); }
   .meta .pill.closed { color: var(--flat); }
-  .lede {
-    margin-top: 14px;
-    color: var(--fg-dim);
-    font-size: 13px;
-    max-width: 60ch;
-  }
+  .lede { margin-top: 14px; color: var(--fg-dim); font-size: 13px; max-width: 60ch; }
 
   /* ─── sections ─── */
   section { margin-bottom: 40px; }
-  .section-head {
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-    margin-bottom: 12px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--line);
-  }
-  .section-head h2 {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--fg-dim);
-    margin: 0;
-  }
+  .section-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .section-head h2 { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--fg-dim); margin: 0; }
   .section-head .note { font-size: 11px; color: var(--fg-mute); }
 
-  /* ─── hero metric ─── */
-  .hero {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 32px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 32px;
-  }
+  /* ─── hero ─── */
+  .hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; padding: 24px 0; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+  .hero .primary { display: flex; align-items: center; gap: 28px; }
   .hero .label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--fg-mute); margin-bottom: 6px; }
-  .hero .value { font-size: 40px; font-weight: 600; letter-spacing: -1px; line-height: 1; color: var(--fg); }
-  .hero .chg { font-size: 14px; margin-top: 8px; }
+  .hero .value { font-size: 44px; font-weight: 600; letter-spacing: -1.5px; line-height: 1; color: var(--fg); }
+  .hero .chg { font-size: 14px; margin-top: 10px; }
+  .hero .candle { flex-shrink: 0; }
   .hero .secondary { display: flex; flex-direction: column; justify-content: center; gap: 14px; padding-left: 32px; border-left: 1px solid var(--line); }
   .hero .secondary .row { display: flex; justify-content: space-between; gap: 16px; font-size: 13px; }
   .hero .secondary .row .k { color: var(--fg-mute); }
@@ -105,81 +66,51 @@
 
   /* ─── tables ─── */
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th {
-    text-align: right;
-    font-weight: 500;
-    font-size: 11px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    padding: 8px 12px 8px 0;
-    border-bottom: 1px solid var(--line);
-  }
+  th { text-align: right; font-weight: 500; font-size: 11px; letter-spacing: 0.8px; text-transform: uppercase; color: var(--fg-mute); padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); }
   th:first-child { text-align: left; padding-left: 0; }
-  td {
-    padding: 9px 12px 9px 0;
-    border-bottom: 1px solid rgba(33,38,45,0.6);
-    text-align: right;
-  }
+  th.day { text-align: center; }
+  td { padding: 9px 10px 9px 0; border-bottom: 1px solid rgba(33,38,45,0.6); text-align: right; vertical-align: middle; }
   td:first-child { text-align: left; padding-left: 0; }
   tbody tr:hover { background: rgba(255,255,255,0.015); }
   tbody tr:last-child td { border-bottom: none; }
   td.sym { font-weight: 600; color: var(--fg); letter-spacing: 0.3px; }
-  td.up { color: var(--accent); }
+  td.sym .logo { width: 20px; height: 20px; border-radius: 3px; margin-right: 8px; vertical-align: -4px; object-fit: contain; background: #fff; }
+  td.day { text-align: center; padding: 6px 4px; }
+  td.up { color: var(--up); }
   td.down { color: var(--down); }
   td.flat { color: var(--flat); }
   td.note { font-size: 11px; color: var(--fg-mute); font-style: italic; }
   td.muted { color: var(--fg-mute); }
+  svg.candle { display: inline-block; vertical-align: middle; }
 
   /* ─── two-col layout ─── */
-  .two-col {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 40px;
-  }
+  .two-col { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; }
   .kv { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; font-size: 13px; }
   .kv .k { color: var(--fg-mute); }
   .kv .v { color: var(--fg); text-align: right; }
 
   /* ─── footer ─── */
-  footer {
-    margin-top: 64px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-    font-size: 11px;
-    color: var(--fg-mute);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 11px; color: var(--fg-mute); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
   footer a { color: var(--fg-dim); text-decoration: none; border-bottom: 1px dotted var(--fg-mute); }
   footer a:hover { color: var(--fg); border-bottom-color: var(--fg-dim); }
-
-  /* ─── loading / error state ─── */
-  .state {
-    padding: 40px 0;
-    text-align: center;
-    color: var(--fg-mute);
-    font-size: 13px;
-  }
-  .state.error { color: var(--down); }
 
   /* ─── responsive ─── */
   @media (max-width: 760px) {
     .wrap { padding: 20px 16px 48px; }
     .hero { grid-template-columns: 1fr; gap: 20px; }
     .hero .secondary { padding-left: 0; border-left: none; border-top: 1px solid var(--line); padding-top: 20px; }
-    .hero .value { font-size: 32px; }
+    .hero .value { font-size: 34px; }
     .two-col { grid-template-columns: 1fr; gap: 32px; }
     th, td { padding: 8px 6px 8px 0; }
-    th:nth-child(n+6), td:nth-child(n+6) { display: none; }  /* hide Vol/Cap on small screens */
+    th:nth-child(n+7), td:nth-child(n+7) { display: none; }
     .brand-row { gap: 8px; }
     .meta { gap: 10px; }
+    td.day { display: table-cell; }
   }
   @media (max-width: 440px) {
-    th:nth-child(n+5), td:nth-child(n+5) { display: none; }  /* also hide Prev/High/Low */
+    th:nth-child(n+5), td:nth-child(n+5) { display: none; }
+    td.day { display: none; }
+    th.day { display: none; }
   }
 </style>
 </head>
@@ -198,10 +129,13 @@
 </header>
 
 <section class="hero" id="hero">
-  <div>
-    <div class="label">PSEi</div>
-    <div class="value" id="hero-value">—</div>
-    <div class="chg" id="hero-change">—</div>
+  <div class="primary">
+    <div>
+      <div class="label">PSEi</div>
+      <div class="value" id="hero-value">—</div>
+      <div class="chg" id="hero-change">—</div>
+    </div>
+    <svg class="candle" id="hero-candle" width="100" height="48" viewBox="0 0 100 48"></svg>
   </div>
   <div class="secondary">
     <div class="row"><span class="k">Generated UTC</span><span class="v" id="gen-utc">—</span></div>
@@ -231,7 +165,7 @@
   <table>
     <thead><tr>
       <th>Symbol</th><th>Last</th><th>Open</th><th>High</th><th>Low</th>
-      <th>Prev</th><th>Change</th><th>Volume</th><th>Mkt Cap</th>
+      <th>Prev</th><th class="day">Day</th><th>Change</th><th>Volume</th><th>Mkt Cap</th>
     </tr></thead>
     <tbody id="stocks-body"></tbody>
   </table>
@@ -266,6 +200,24 @@ const fmtChg = c => {
   return { text: `${arrow} ${sign(amt)}${Math.abs(amt).toFixed(2)}  ${sign(pct)}${Math.abs(pct).toFixed(2)}%`, cls: c.change };
 };
 
+// Candlestick renderer — open/high/low/close → SVG
+function candleSvg(open, high, low, close, w = 50, h = 24) {
+  if (open == null || high == null || low == null || close == null) return '';
+  const lo = Math.min(low, open, close);
+  const hi = Math.max(high, open, close);
+  const range = hi - lo || 1;
+  const y = v => 2 + (h - 4) - ((v - lo) / range) * (h - 4);
+  const up = close >= open;
+  const c = up ? '#2ea043' : '#da3633';
+  const bodyTop = Math.min(y(open), y(close));
+  const bodyH = Math.max(1, Math.abs(y(close) - y(open)));
+  const mid = w / 2;
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" class="candle">
+    <line x1="${mid}" y1="${y(high)}" x2="${mid}" y2="${y(low)}" stroke="${c}" stroke-width="1"/>
+    <rect x="${mid - 4}" y="${bodyTop}" width="8" height="${bodyH}" fill="${c}"/>
+  </svg>`;
+}
+
 async function load() {
   try {
     const r = await fetch('./stocks.json', { cache: 'no-store' });
@@ -274,7 +226,7 @@ async function load() {
   } catch (e) {
     $('updated').textContent = 'failed to load';
     $('hero-value').textContent = '—';
-    $('hero-change').innerHTML = '<span class="note">stocks.json not found — workflow has not produced the file yet, or copy step failed</span>';
+    $('hero-change').innerHTML = '<span class="note">stocks.json not found — workflow has not produced the file yet</span>';
     $('status').textContent = 'error';
     $('status').className = 'pill closed';
   }
@@ -295,6 +247,8 @@ function render(d) {
       const cls = dirCls(psei.change_pct);
       $('hero-change').innerHTML =
         `<span class="${cls}">${sign(psei.change)}${nf(Math.abs(psei.change || 0))}  ${sign(psei.change_pct)}${Math.abs(psei.change_pct || 0).toFixed(2)}%</span>`;
+      // Hero candle — we'd need PSEi OHLC, but we only have value + change for indices.
+      // Skip candle for now; the data isn't there.
     }
 
     const ms = d.index.market_summary || {};
@@ -325,13 +279,18 @@ function render(d) {
   $('stocks-body').innerHTML = stocks.map(q => {
     const ch = fmtChg(q);
     const suspended = q.status && /suspend/i.test(q.status);
+    const logo = q.logo_url
+      ? `<img src="${q.logo_url}" alt="" class="logo" loading="lazy" onerror="this.style.display='none'">`
+      : '';
+    const cdl = suspended ? '<span class="note">—</span>' : candleSvg(q.open, q.high, q.low, q.last_traded_price);
     return `<tr>
-      <td class="sym">${q.symbol}</td>
+      <td class="sym">${logo}${q.symbol}</td>
       <td>${nf(q.last_traded_price)}</td>
       <td>${nf(q.open)}</td>
       <td>${nf(q.high)}</td>
       <td>${nf(q.low)}</td>
       <td>${nf(q.previous_close)}</td>
+      <td class="day">${cdl}</td>
       <td class="${ch.cls}">${ch.text}${suspended ? ' <span class="note">(suspended)</span>' : ''}</td>
       <td class="muted">${compact(q.volume)}</td>
       <td class="muted">${compact(q.market_cap)}</td>
