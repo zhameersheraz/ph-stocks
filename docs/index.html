@@ -69,7 +69,7 @@
   td:first-child { text-align: left; padding-left: 0; }
   tbody tr:hover { background: rgba(255,255,255,0.015); }
   tbody tr:last-child td { border-bottom: none; }
-  td.sym { font-weight: 600; color: var(--fg); letter-spacing: 0.3px; cursor: pointer; }
+  td.sym { font-weight: 600; color: var(--fg); letter-spacing: 0.3px; cursor: pointer; transition: color 0.1s; }
   td.sym:hover { color: var(--up); }
   td.sym .logo { width: 20px; height: 20px; border-radius: 3px; margin-right: 8px; vertical-align: -4px; object-fit: contain; background: #fff; }
   td.day { text-align: center; padding: 6px 4px; }
@@ -85,12 +85,13 @@
     color: var(--fg-mute);
     font-family: inherit;
     font-size: 11px;
-    padding: 3px 8px;
+    padding: 4px 10px;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 3px;
     letter-spacing: 0.5px;
+    transition: all 0.1s;
   }
-  td.chart-btn button:hover { color: var(--up); border-color: var(--up); }
+  td.chart-btn button:hover { color: var(--fg); border-color: var(--up); background: rgba(46,160,67,0.06); }
   svg.candle { display: inline-block; vertical-align: middle; }
 
   .two-col { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; }
@@ -196,7 +197,7 @@
 </div>
 
 <section>
-  <div class="section-head"><h2>Stocks</h2><span class="note" id="stock-count">— · click a symbol for chart</span></div>
+  <div class="section-head"><h2>Stocks</h2><span class="note" id="stock-count">— · click any row → 90-day chart</span></div>
   <table>
     <thead><tr>
       <th>Symbol</th><th>Last</th><th>Open</th><th>High</th><th>Low</th>
@@ -415,7 +416,7 @@ function render(d) {
   }
 
   const stocks = QUOTES.slice().sort((a,b) => a.symbol.localeCompare(b.symbol));
-  $('stock-count').textContent = stocks.length + ' symbols · click symbol or ▤ for chart';
+  $('stock-count').textContent = stocks.length + ' symbols · click any row → 90-day chart';
   $('stocks-body').innerHTML = stocks.map(q => {
     const ch = fmtChg(q);
     const suspended = q.status && /suspend/i.test(q.status);
@@ -423,8 +424,8 @@ function render(d) {
       ? `<img src="${q.logo_url}" alt="" class="logo" loading="lazy" onerror="this.style.display='none'">`
       : '';
     const cdl = suspended ? '<span class="note">—</span>' : candleSvg(q.open, q.high, q.low, q.last_traded_price);
-    return `<tr>
-      <td class="sym" data-sym="${q.symbol}">${logo}${q.symbol}</td>
+    return `<tr data-sym="${q.symbol}" style="cursor:pointer">
+      <td class="sym">${logo}${q.symbol}</td>
       <td>${nf(q.last_traded_price)}</td>
       <td>${nf(q.open)}</td>
       <td>${nf(q.high)}</td>
@@ -434,13 +435,13 @@ function render(d) {
       <td class="${ch.cls}">${ch.text}${suspended ? ' <span class="note">(suspended)</span>' : ''}</td>
       <td class="muted">${compact(q.volume)}</td>
       <td class="muted">${compact(q.market_cap)}</td>
-      <td class="chart-btn"><button data-sym="${q.symbol}" title="Show chart">▤</button></td>
+      <td class="chart-btn"><button data-sym="${q.symbol}" title="Show chart">chart</button></td>
     </tr>`;
   }).join('');
 
-  // Click handlers
-  document.querySelectorAll('td.sym[data-sym], td.chart-btn button[data-sym]').forEach(el => {
-    el.addEventListener('click', () => openChart(el.dataset.sym));
+  // Click anywhere on a row → open chart
+  document.querySelectorAll('#stocks-body tr[data-sym]').forEach(r => {
+    r.addEventListener('click', () => openChart(r.dataset.sym));
   });
 }
 
