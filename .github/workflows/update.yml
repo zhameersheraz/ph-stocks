@@ -27,3 +27,4 @@ jobs:
           else
             git commit -m "stocks: update snapshot"
             git push
+          fi
