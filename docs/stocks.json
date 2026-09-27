@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-27 11:41:06",
+  "generated_utc": "2026-09-27 13:30:29",
   "source": "https://edge.pse.com.ph",
   "index": {
     "as_of": "Sep 25, 2026 5:29 PM",
@@ -445,6 +445,32 @@
       "fifty_two_week_low": 31.5,
       "last_traded_price": 38.0,
       "note": "Suspended — showing previous close"
+    },
+    {
+      "symbol": "GTCAP",
+      "name": "GT Capital Holdings, Inc.",
+      "as_of": "Sep 25, 2026 02:50 PM",
+      "status": "Open",
+      "market_cap": 92572372410.0,
+      "outstanding_shares": 215284587.0,
+      "listed_shares": 215284587.0,
+      "issued_shares": 215284587.0,
+      "free_float_pct": 43.71,
+      "foreign_ownership_limit_pct": 40.0,
+      "last_traded_price": 437.0,
+      "open": 430.0,
+      "previous_close": 430.0,
+      "previous_close_date": "Sep 24, 2026",
+      "change": "up",
+      "change_amount": 7.0,
+      "change_pct": 1.63,
+      "high": 438.6,
+      "value": 49761904.0,
+      "low": 422.0,
+      "volume": 114640.0,
+      "average_price": 434.07,
+      "fifty_two_week_high": 713.0,
+      "fifty_two_week_low": 404.0
     },
     {
       "symbol": "SECB",
