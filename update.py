@@ -34,6 +34,7 @@ RC = re.compile(r"(?P<d>up|down)\s+(?P<a>[\d,\.]+)\s*\(\s*(?P<p>[\-\d,\.]+)\s*%\
 RP = re.compile(r"(?P<pr>[\d,\.]+)\s*\((?P<dt>[^)]+)\)")
 RA = re.compile(r"As of\s+(?P<ts>[^<]+?)</span>")
 RN = re.compile(r'<div class="compInfo">\s*<p[^>]*>(?P<n>[^<]+)</p>', re.DOTALL)
+RL = re.compile(r'<img\s+src="(/clogo/[^"]+)"\s+alt="Logo"', re.IGNORECASE)
 RX = re.compile(r'[\d\.\-]+')
 
 LB = {"Status":"status","Market Capitalization":"market_cap",
@@ -58,11 +59,13 @@ def _f(s):
     except ValueError: return None
 
 def parse(html, sym):
-    o = {"symbol":sym,"name":N.get(sym,sym),"as_of":None}
+    o = {"symbol":sym,"name":N.get(sym,sym),"as_of":None,"logo_url":None}
     m = RA.search(html)
     if m: o["as_of"] = m.group("ts").strip()
     m = RN.search(html)
     if m: o["name"] = m.group("n").strip()
+    m = RL.search(html)
+    if m: o["logo_url"] = "https://edge.pse.com.ph" + m.group(1)
     for m in RF.finditer(html):
         lbl = m.group("l").strip()
         key = LB.get(lbl)
