@@ -36,6 +36,11 @@
   .brand { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; color: var(--fg); }
   .brand .dot { color: var(--up); }
   .brand small { color: var(--fg-dim); font-weight: 400; margin-left: 10px; font-size: 13px; letter-spacing: 0; }
+  .brand .src-link {
+    margin-left: 14px; color: var(--fg-mute); font-size: 12px; text-decoration: none;
+    border-bottom: 1px dotted var(--fg-mute); padding-bottom: 1px;
+  }
+  .brand .src-link:hover { color: var(--up); border-bottom-color: var(--up); }
   .meta { font-size: 12px; color: var(--fg-mute); display: flex; gap: 16px; align-items: center; }
   .meta .pill {
     border: 1px solid var(--line); padding: 2px 8px; font-size: 11px;
@@ -156,7 +161,7 @@
 
 <header>
   <div class="brand-row">
-    <div class="brand">ph-stocks<span class="dot">.</span><small>Philippine Stock Exchange</small></div>
+    <div class="brand">ph-stocks<span class="dot">.</span><small>Philippine Stock Exchange</small><a class="src-link" href="https://github.com/zhameersheraz/ph-stocks" target="_blank" rel="noopener">↗ source</a></div>
     <div class="meta">
       <span id="updated">loading…</span>
       <span id="status" class="pill">…</span>
