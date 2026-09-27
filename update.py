@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """ph-stocks: PSE stock snapshot via Yahoo Finance (yfinance)."""
-
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-
 import yfinance as yf
-
+# PSE MIC (Market Identifier Code) per ISO 10383
+PSE_MIC = "XPHS"
 # Top PSE-listed Philippine companies (symbol, display name)
 TICKERS = [
     ("SM",    "SM Investments Corp."),
@@ -30,15 +29,13 @@ TICKERS = [
     ("CHIB",  "China Banking Corp."),
     ("MEG",   "Megaworld Corp."),
 ]
-
 ROOT = Path(__file__).parent
-
-
 def fetch_one(symbol, name):
-    for suffix in (".PS", ""):
-        sym = f"{symbol}{suffix}"
+    """Try PSE MIC tuple format first; fall back to bare ticker."""
+    candidates = [(symbol, PSE_MIC), symbol]
+    for cand in candidates:
         try:
-            t = yf.Ticker(sym)
+            t = yf.Ticker(cand)
             fast = getattr(t, "fast_info", None)
             if fast is None:
                 continue
@@ -59,8 +56,6 @@ def fetch_one(symbol, name):
         except Exception:
             continue
     return None
-
-
 def fetch_all():
     rows, failed = [], []
     for sym, name in TICKERS:
@@ -70,13 +65,10 @@ def fetch_all():
         else:
             failed.append(sym)
     return rows, failed
-
-
 def write_outputs(rows, failed):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     payload = {"updated_at": now, "count": len(rows), "failed": failed, "stocks": rows}
     (ROOT / "stocks.json").write_text(json.dumps(payload, indent=2))
-
     lines = [
         "# ph-stocks", "",
         f"Last updated: **{now}**", "",
@@ -93,15 +85,11 @@ def write_outputs(rows, failed):
         lines.append("")
         lines.append(f"⚠️ Could not fetch: {', '.join(failed)}")
     (ROOT / "stocks.md").write_text("\n".join(lines))
-
-
 def main():
     rows, failed = fetch_all()
     if not rows:
         raise SystemExit("No stocks fetched — aborting.")
     write_outputs(rows, failed)
     print(f"Updated {len(rows)} stocks ({len(failed)} failed)")
-
-
 if __name__ == "__main__":
     main()
