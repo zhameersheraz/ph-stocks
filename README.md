@@ -1,16 +1,20 @@
 # ph-stocks
 
+![banner](docs/banner.svg)
+
 Philippine Stock Exchange snapshot, auto-updated every 30 minutes.
 
 - **Source**: [PSE Edge](https://edge.pse.com.ph) — official disclosure portal of the PSE
 - **Refresh**: GitHub Actions cron every 30 minutes, plus on-demand via `repository_dispatch`
 - **Output**: `stocks.md` (human-readable) and `stocks.json` (machine-readable)
 - **Stack**: Python stdlib only — no external dependencies, no API keys
+- **Live site**: [GitHub Pages](https://zhameersheraz.github.io/ph-stocks/) — auto-deployed from `docs/`
 
 ## What it tracks
 
 21 Philippine blue chips spanning financials, industrials, holding firms,
-property, services, and telecom. Each entry includes last traded price, open,jhigh, low, previous close, change, volume, value, market cap, 52-week range,
+property, services, and telecom. Each entry includes last traded price, open,
+high, low, previous close, change, volume, value, market cap, 52-week range,
 and the as-of timestamp straight from PSE Edge.
 
 ## How it works
@@ -18,7 +22,7 @@ and the as-of timestamp straight from PSE Edge.
 1. `update.py` hits the public PSE Edge Stock Data page for each ticker.
 2. It parses the server-rendered HTML with regex (no JS, no auth, no challenge).
 3. It also fetches the Index Summary page for PSEi + sector indices + market summary.
-$. Writes `stocks.json` and `stocks.md`, then the workflow commits any change.
+4. Writes `stocks.json` and `stocks.md`, then the workflow commits any change.
 
 ## Layout
 
@@ -28,6 +32,8 @@ $. Writes `stocks.json` and `stocks.md`, then the workflow commits any change.
 | `.github/workflows/update.yml` | 30-min cron + manual + dispatch triggers. |
 | `stocks.md` | Latest snapshot (markdown). |
 | `stocks.json` | Latest snapshot (JSON, schema: see below). |
+| `docs/index.html` | GitHub Pages dashboard (loads `stocks.json`). |
+| `docs/banner.svg` | README hero banner. |
 
 ## Schema (`stocks.json`)
 
@@ -39,7 +45,7 @@ $. Writes `stocks.json` and `stocks.md`, then the workflow commits any change.
     "as_of": "Sep 25, 2026 5:29 PM",
     "market_status": "CLOSED",
     "indices": [{"name": "PSEi", "value": 5825.97, "change": 95.95, "change_pct": 1.67}],
-    "market_summary": {"Total Volume": 4059619816, ...}
+    "market_summary": {"Total Volume": 4059619816}
   },
   "stocks": [
     {
@@ -78,6 +84,17 @@ cat stocks.md
 
 The script is safe to run as often as you like; each run is a ~13-second pass
 (~21 stock pages + 1 index page, 0.6s polite delay between requests).
+
+## Deploy GitHub Pages site
+
+The `docs/` folder ships a static dashboard that loads `stocks.json`. To enable:
+
+1. Repo **Settings → Pages**
+2. Source: **Deploy from a branch**
+3. Branch: `main`, Folder: `/docs`
+4. Save
+
+Live URL: `https://zhameersheraz.github.io/ph-stocks/`
 
 ## Why not yfinance / Stooq?
 
