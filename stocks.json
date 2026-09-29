@@ -1,59 +1,10 @@
 {
-  "generated_utc": "2026-09-29 00:30:31",
+  "generated_utc": "2026-09-29 01:00:37",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Sep 29, 2026 8:30 AM",
-    "market_status": "CLOSED",
-    "indices": [
-      {
-        "name": "PSEi",
-        "value": 5788.87,
-        "change": 37.1,
-        "change_pct": 0.64
-      },
-      {
-        "name": "All Shares",
-        "value": 3222.72,
-        "change": 23.49,
-        "change_pct": 0.72
-      },
-      {
-        "name": "Financials",
-        "value": 1794.71,
-        "change": 16.68,
-        "change_pct": 0.92
-      },
-      {
-        "name": "Industrial",
-        "value": 7475.79,
-        "change": 121.95,
-        "change_pct": 1.61
-      },
-      {
-        "name": "Holding Firms",
-        "value": 4102.31,
-        "change": 40.7,
-        "change_pct": 0.98
-      },
-      {
-        "name": "Services",
-        "value": 3188.01,
-        "change": 4.4,
-        "change_pct": 0.14
-      },
-      {
-        "name": "Mining and Oil",
-        "value": 19931.05,
-        "change": 669.74,
-        "change_pct": 3.25
-      },
-      {
-        "name": "Property",
-        "value": 1761.34,
-        "change": 0.97,
-        "change_pct": 0.05
-      }
-    ],
+    "as_of": "Sep 29, 2026 9:00 AM",
+    "market_status": "PREOPEN",
+    "indices": [],
     "market_summary": {
       "Total Volume": 0.0,
       "Total Trades": 0.0,
@@ -67,7 +18,7 @@
     {
       "symbol": "RRHI",
       "name": "Robinsons Retail Holdings, Inc.",
-      "as_of": "Sep 28, 2026 02:50 PM",
+      "as_of": null,
       "logo_url": "https://edge.pse.com.ph/clogo/646/cl530e9909r430.jpg",
       "status": "Suspended",
       "market_cap": 40493504330.0,
