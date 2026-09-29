@@ -1,22 +1,22 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-09-29 04:30:29** UTC_
+_Last updated: **2026-09-29 05:00:37** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
-**Market status:** `RECESS`  
-**As of:** Sep 29, 2026 12:30 PM  
+**Market status:** `OPEN`  
+**As of:** Sep 29, 2026 1:00 PM  
 
 ## Indices
 
 | Index | Value | Change | % Change |
 |---|---:|---:|---:|
-| PSEi | 5,776.51 | +12.36 | +0.21% |
-| All Shares | 3,217.46 | +5.26 | +0.16% |
-| Financials | 1,791.83 | +2.88 | +0.16% |
-| Industrial | 7,436.17 | +39.62 | +0.53% |
-| Holding Firms | 4,091.28 | +11.03 | +0.27% |
-| Services | 3,189.62 | +1.61 | +0.05% |
+| PSEi | 5,777.04 | +11.83 | +0.20% |
+| All Shares | 3,217.34 | +5.38 | +0.17% |
+| Financials | 1,791.28 | +3.43 | +0.19% |
+| Industrial | 7,434.55 | +41.24 | +0.55% |
+| Holding Firms | 4,090.76 | +11.55 | +0.28% |
+| Services | 3,191.21 | +3.20 | +0.10% |
 | Mining and Oil | 19,749.76 | +181.29 | +0.91% |
 | Property | 1,758.36 | +2.98 | +0.17% |
 
@@ -24,12 +24,12 @@ _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 | Metric | Value |
 |---|---:|
-| Total Volume | 328.78M |
-| Total Trades | 38.4K |
+| Total Volume | 330.49M |
+| Total Trades | 38.9K |
 | Total Value | 1.64B |
-| Advances | 68 |
-| Declines | 81 |
-| Unchanged | 56 |
+| Advances | 67 |
+| Declines | 88 |
+| Unchanged | 53 |
 
 ## Stocks
 

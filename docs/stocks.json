@@ -1,45 +1,45 @@
 {
-  "generated_utc": "2026-09-29 04:30:29",
+  "generated_utc": "2026-09-29 05:00:37",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Sep 29, 2026 12:30 PM",
-    "market_status": "RECESS",
+    "as_of": "Sep 29, 2026 1:00 PM",
+    "market_status": "OPEN",
     "indices": [
       {
         "name": "PSEi",
-        "value": 5776.51,
-        "change": 12.36,
-        "change_pct": 0.21
+        "value": 5777.04,
+        "change": 11.83,
+        "change_pct": 0.2
       },
       {
         "name": "All Shares",
-        "value": 3217.46,
-        "change": 5.26,
-        "change_pct": 0.16
+        "value": 3217.34,
+        "change": 5.38,
+        "change_pct": 0.17
       },
       {
         "name": "Financials",
-        "value": 1791.83,
-        "change": 2.88,
-        "change_pct": 0.16
+        "value": 1791.28,
+        "change": 3.43,
+        "change_pct": 0.19
       },
       {
         "name": "Industrial",
-        "value": 7436.17,
-        "change": 39.62,
-        "change_pct": 0.53
+        "value": 7434.55,
+        "change": 41.24,
+        "change_pct": 0.55
       },
       {
         "name": "Holding Firms",
-        "value": 4091.28,
-        "change": 11.03,
-        "change_pct": 0.27
+        "value": 4090.76,
+        "change": 11.55,
+        "change_pct": 0.28
       },
       {
         "name": "Services",
-        "value": 3189.62,
-        "change": 1.61,
-        "change_pct": 0.05
+        "value": 3191.21,
+        "change": 3.2,
+        "change_pct": 0.1
       },
       {
         "name": "Mining and Oil",
@@ -55,12 +55,12 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 328780239.0,
-      "Total Trades": 38421.0,
+      "Total Volume": 330494932.0,
+      "Total Trades": 38858.0,
       "Total Value": 1642943882.0,
-      "Advances": 68.0,
-      "Declines": 81.0,
-      "Unchanged": 56.0
+      "Advances": 67.0,
+      "Declines": 88.0,
+      "Unchanged": 53.0
     }
   },
   "stocks": [
