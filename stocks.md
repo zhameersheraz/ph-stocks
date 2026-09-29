@@ -1,11 +1,11 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-09-29 07:01:17** UTC_
+_Last updated: **2026-09-29 07:30:31** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 **Market status:** `CLOSED`  
-**As of:** Sep 29, 2026 3:00 PM  
+**As of:** Sep 29, 2026 3:29 PM  
 
 ## Indices
 
@@ -26,7 +26,7 @@ _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 |---|---:|
 | Total Volume | 750.37M |
 | Total Trades | 82.9K |
-| Total Value | 5.36B |
+| Total Value | 5.39B |
 | Advances | 72 |
 | Declines | 112 |
 | Unchanged | 52 |
@@ -53,7 +53,7 @@ _Tracking 21 Philippine blue chips._
 | **PGOLD** | ₱40.15 | ₱40.20 | ₱40.95 | ₱40.00 | ₱40.20 | ▼ -0.05 (-0.12%) | 472.8K | 19.12M | 115.78B |
 | **RRHI** | ₱38.00 | — | — | — | ₱38.00 | — | — | — | 40.49B |
 | **SECB** | ₱62.85 | ₱63.00 | ₱63.50 | ₱62.50 | ₱63.00 | ▼ -0.15 (-0.24%) | 117.3K | 7.38M | 47.47B |
-| **SM** | ₱499.60 | ₱508.50 | ₱512.00 | ₱499.60 | ₱508.50 | ▼ -8.90 (-1.75%) | 267.4K | 134.48M | 615.74B |
+| **SM** | ₱499.60 | ₱508.50 | ₱512.00 | ₱499.60 | ₱508.50 | ▼ -8.90 (-1.75%) | 269.6K | 135.58M | 615.74B |
 | **SMC** | ₱61.00 | ₱61.00 | ₱61.50 | ₱60.85 | ₱61.00 | ▲ +0.00 (+0.00%) | 25.6K | 1.57M | 145.42B |
 | **SMPH** | ₱15.90 | ₱16.00 | ₱16.08 | ₱15.86 | ₱16.00 | ▼ -0.10 (-0.62%) | 5.21M | 83.02M | 455.33B |
 | **TEL** | ₱1,075.00 | ₱1,089.00 | ₱1,092.00 | ₱1,075.00 | ₱1,089.00 | ▼ -14.00 (-1.29%) | 128.5K | 139.00M | 235.28B |
