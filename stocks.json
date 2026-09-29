@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-29 23:00:38",
+  "generated_utc": "2026-09-29 23:30:30",
   "source": "https://edge.pse.com.ph",
   "index": {
     "as_of": "Sep 29, 2026 5:30 PM",
@@ -98,7 +98,7 @@
       "logo_url": "https://edge.pse.com.ph/clogo/112/cl53197f55r962.jpg",
       "status": "Open",
       "market_cap": 455322804704.0,
-      "outstanding_shares": 28457980494.0,
+      "outstanding_shares": 28457675294.0,
       "listed_shares": 33166300075.0,
       "issued_shares": 33166300075.0,
       "free_float_pct": 36.66,
@@ -314,7 +314,7 @@
       "logo_url": "https://edge.pse.com.ph/clogo/124/cl5b0fbcaer79.png",
       "status": "Open",
       "market_cap": 124711092382.5,
-      "outstanding_shares": 2123541998.0,
+      "outstanding_shares": 2122741998.0,
       "listed_shares": 2230160190.0,
       "issued_shares": 2230160190.0,
       "free_float_pct": 42.58,
