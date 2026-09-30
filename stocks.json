@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-09-30 07:02:13",
+  "generated_utc": "2026-09-30 07:30:30",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Sep 30, 2026 3:01 PM",
+    "as_of": "Sep 30, 2026 3:30 PM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -57,7 +57,7 @@
     "market_summary": {
       "Total Volume": 749435950.0,
       "Total Trades": 100901.0,
-      "Total Value": 9098204794.0,
+      "Total Value": 9098249884.0,
       "Advances": 74.0,
       "Declines": 106.0,
       "Unchanged": 71.0
