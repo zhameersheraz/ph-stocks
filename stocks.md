@@ -1,19 +1,19 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-09-30 01:00:39** UTC_
+_Last updated: **2026-09-30 01:25:51** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 **Market status:** `PREOPEN`  
-**As of:** Sep 30, 2026 9:00 AM  
+**As of:** Sep 30, 2026 9:25 AM  
 
 ## Market Summary
 
 | Metric | Value |
 |---|---:|
-| Total Volume | 0 |
-| Total Trades | 0 |
-| Total Value | 0 |
+| Total Volume | 1.99M |
+| Total Trades | 1 |
+| Total Value | 65.54M |
 | Advances | 0 |
 | Declines | 0 |
 | Unchanged | 0 |
