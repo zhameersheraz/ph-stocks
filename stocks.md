@@ -1,11 +1,11 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-09-30 01:25:51** UTC_
+_Last updated: **2026-09-30 01:30:29** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 **Market status:** `PREOPEN`  
-**As of:** Sep 30, 2026 9:25 AM  
+**As of:** Sep 30, 2026 9:29 AM  
 
 ## Market Summary
 
