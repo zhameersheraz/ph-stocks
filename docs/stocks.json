@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-10-02 07:00:39",
+  "generated_utc": "2026-10-02 07:12:21",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 2, 2026 3:00 PM",
+    "as_of": "Oct 2, 2026 3:11 PM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -55,9 +55,9 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 839951668.0,
-      "Total Trades": 75993.0,
-      "Total Value": 8161550433.0,
+      "Total Volume": 840219323.0,
+      "Total Trades": 76018.0,
+      "Total Value": 8175298951.0,
       "Advances": 77.0,
       "Declines": 109.0,
       "Unchanged": 56.0
@@ -165,9 +165,9 @@
       "change_amount": 8.0,
       "change_pct": 1.53,
       "high": 523.0,
-      "value": 355902370.0,
+      "value": 355953870.0,
       "low": 512.0,
-      "volume": 692770.0,
+      "volume": 692870.0,
       "average_price": 513.74,
       "fifty_two_week_high": 600.0,
       "fifty_two_week_low": 373.0
@@ -219,9 +219,9 @@
       "change_amount": 0.3,
       "change_pct": 0.27,
       "high": 111.1,
-      "value": 317397428.0,
+      "value": 317404064.0,
       "low": 109.5,
-      "volume": 2873810.0,
+      "volume": 2873870.0,
       "average_price": 110.44,
       "fifty_two_week_high": 144.6,
       "fifty_two_week_low": 110.1
@@ -246,9 +246,9 @@
       "change_amount": 0.5,
       "change_pct": 0.53,
       "high": 94.5,
-      "value": 104651281.0,
+      "value": 104660681.0,
       "low": 93.4,
-      "volume": 1112600.0,
+      "volume": 1112700.0,
       "average_price": 94.06,
       "fifty_two_week_high": 125.5,
       "fifty_two_week_low": 87.0
@@ -273,10 +273,10 @@
       "change_amount": 19.0,
       "change_pct": 1.24,
       "high": 1555.0,
-      "value": 219086530.0,
+      "value": 219638200.0,
       "low": 1515.0,
-      "volume": 142575.0,
-      "average_price": 1536.64,
+      "volume": 142930.0,
+      "average_price": 1536.68,
       "fifty_two_week_high": 1964.0,
       "fifty_two_week_low": 1401.0
     },
@@ -327,9 +327,9 @@
       "change_amount": 0.6,
       "change_pct": 1.04,
       "high": 57.5,
-      "value": 274459498.5,
+      "value": 274560780.5,
       "low": 56.5,
-      "volume": 4828630.0,
+      "volume": 4830410.0,
       "average_price": 56.84,
       "fifty_two_week_high": 82.0,
       "fifty_two_week_low": 55.9
@@ -354,9 +354,9 @@
       "change_amount": 10.0,
       "change_pct": 0.93,
       "high": 1090.0,
-      "value": 76275060.0,
+      "value": 76280500.0,
       "low": 1073.0,
-      "volume": 70500.0,
+      "volume": 70505.0,
       "average_price": 1081.92,
       "fifty_two_week_high": 1445.0,
       "fifty_two_week_low": 1065.0
@@ -435,9 +435,9 @@
       "change_amount": 0.2,
       "change_pct": 0.5,
       "high": 40.0,
-      "value": 123347060.0,
+      "value": 123746060.0,
       "low": 39.7,
-      "volume": 3092900.0,
+      "volume": 3102900.0,
       "average_price": 39.88,
       "fifty_two_week_high": 49.1,
       "fifty_two_week_low": 35.1
@@ -535,9 +535,9 @@
       "change_amount": 0.1,
       "change_pct": 0.2,
       "high": 50.2,
-      "value": 28256339.0,
+      "value": 28256840.0,
       "low": 49.55,
-      "volume": 563860.0,
+      "volume": 563870.0,
       "average_price": 50.11,
       "fifty_two_week_high": 71.0,
       "fifty_two_week_low": 46.65
@@ -589,9 +589,9 @@
       "change_amount": 1.85,
       "change_pct": 3.05,
       "high": 60.75,
-      "value": 10504968.0,
+      "value": 10515543.0,
       "low": 55.0,
-      "volume": 178020.0,
+      "volume": 178200.0,
       "average_price": 59.01,
       "fifty_two_week_high": 86.0,
       "fifty_two_week_low": 56.5
