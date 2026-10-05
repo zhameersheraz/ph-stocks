@@ -1,14 +1,14 @@
 {
-  "generated_utc": "2026-10-05 01:00:34",
+  "generated_utc": "2026-10-05 01:30:28",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 5, 2026 9:00 AM",
+    "as_of": "Oct 5, 2026 9:29 AM",
     "market_status": "PREOPEN",
     "indices": [],
     "market_summary": {
-      "Total Volume": 0.0,
-      "Total Trades": 0.0,
-      "Total Value": 0.0,
+      "Total Volume": 214800.0,
+      "Total Trades": 1.0,
+      "Total Value": 20183682.0,
       "Advances": 0.0,
       "Declines": 0.0,
       "Unchanged": 0.0
@@ -18,7 +18,7 @@
     {
       "symbol": "RRHI",
       "name": "Robinsons Retail Holdings, Inc.",
-      "as_of": "Oct 02, 2026 02:50 PM",
+      "as_of": null,
       "logo_url": "https://edge.pse.com.ph/clogo/646/cl530e9909r430.jpg",
       "status": "Suspended",
       "market_cap": 40493504330.0,
