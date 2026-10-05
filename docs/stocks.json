@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-10-05 07:00:41",
+  "generated_utc": "2026-10-05 07:30:35",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 5, 2026 3:00 PM",
+    "as_of": "Oct 5, 2026 3:29 PM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -57,7 +57,7 @@
     "market_summary": {
       "Total Volume": 414323178.0,
       "Total Trades": 70275.0,
-      "Total Value": 3726795319.0,
+      "Total Value": 3742813171.0,
       "Advances": 85.0,
       "Declines": 95.0,
       "Unchanged": 77.0
@@ -84,10 +84,10 @@
       "change_amount": 2.0,
       "change_pct": 0.4,
       "high": 501.0,
-      "value": 140622014.0,
+      "value": 144026464.0,
       "low": 491.8,
-      "volume": 283260.0,
-      "average_price": 496.44,
+      "volume": 290110.0,
+      "average_price": 496.45,
       "fifty_two_week_high": 757.5,
       "fifty_two_week_low": 486.2
     },
