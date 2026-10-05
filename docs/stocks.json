@@ -1,59 +1,10 @@
 {
-  "generated_utc": "2026-10-05 00:30:30",
+  "generated_utc": "2026-10-05 01:00:34",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 5, 2026 8:30 AM",
-    "market_status": "CLOSED",
-    "indices": [
-      {
-        "name": "PSEi",
-        "value": 5629.03,
-        "change": 0.44,
-        "change_pct": 0.01
-      },
-      {
-        "name": "All Shares",
-        "value": 3152.39,
-        "change": 4.44,
-        "change_pct": 0.14
-      },
-      {
-        "name": "Financials",
-        "value": 1759.39,
-        "change": 2.62,
-        "change_pct": 0.15
-      },
-      {
-        "name": "Industrial",
-        "value": 7334.99,
-        "change": 18.32,
-        "change_pct": 0.25
-      },
-      {
-        "name": "Holding Firms",
-        "value": 4084.45,
-        "change": 6.31,
-        "change_pct": 0.15
-      },
-      {
-        "name": "Services",
-        "value": 3015.53,
-        "change": 14.09,
-        "change_pct": 0.47
-      },
-      {
-        "name": "Mining and Oil",
-        "value": 19332.2,
-        "change": 10.82,
-        "change_pct": 0.06
-      },
-      {
-        "name": "Property",
-        "value": 1735.36,
-        "change": 7.63,
-        "change_pct": 0.44
-      }
-    ],
+    "as_of": "Oct 5, 2026 9:00 AM",
+    "market_status": "PREOPEN",
+    "indices": [],
     "market_summary": {
       "Total Volume": 0.0,
       "Total Trades": 0.0,
