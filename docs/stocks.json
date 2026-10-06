@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-06 23:00:55",
+  "generated_utc": "2026-10-06 23:30:31",
   "source": "https://edge.pse.com.ph",
   "index": {
     "as_of": "Oct 6, 2026 5:29 PM",
@@ -314,7 +314,7 @@
       "logo_url": "https://edge.pse.com.ph/clogo/124/cl5b0fbcaer79.png",
       "status": "Open",
       "market_cap": 119667169437.1,
-      "outstanding_shares": 2120158998.0,
+      "outstanding_shares": 2119878998.0,
       "listed_shares": 2230160190.0,
       "issued_shares": 2230160190.0,
       "free_float_pct": 42.58,
