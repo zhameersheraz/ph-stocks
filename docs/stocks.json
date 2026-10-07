@@ -1,66 +1,66 @@
 {
-  "generated_utc": "2026-10-07 04:30:32",
+  "generated_utc": "2026-10-07 05:00:42",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 7, 2026 12:30 PM",
-    "market_status": "RECESS",
+    "as_of": "Oct 7, 2026 1:00 PM",
+    "market_status": "OPEN",
     "indices": [
       {
         "name": "PSEi",
-        "value": 5722.13,
-        "change": 45.01,
-        "change_pct": 0.79
+        "value": 5721.33,
+        "change": 44.21,
+        "change_pct": 0.78
       },
       {
         "name": "All Shares",
-        "value": 3183.96,
-        "change": 13.23,
+        "value": 3184.03,
+        "change": 13.3,
         "change_pct": 0.42
       },
       {
         "name": "Financials",
-        "value": 1763.57,
-        "change": 15.24,
+        "value": 1763.61,
+        "change": 15.28,
         "change_pct": 0.87
       },
       {
         "name": "Industrial",
-        "value": 7270.09,
-        "change": 24.69,
-        "change_pct": 0.34
+        "value": 7272.39,
+        "change": 22.39,
+        "change_pct": 0.31
       },
       {
         "name": "Holding Firms",
-        "value": 4167.55,
-        "change": 43.95,
-        "change_pct": 1.07
+        "value": 4165.0,
+        "change": 41.4,
+        "change_pct": 1.0
       },
       {
         "name": "Services",
-        "value": 3121.07,
-        "change": 23.77,
-        "change_pct": 0.77
+        "value": 3120.94,
+        "change": 23.64,
+        "change_pct": 0.76
       },
       {
         "name": "Mining and Oil",
-        "value": 19152.25,
-        "change": 50.77,
-        "change_pct": 0.27
+        "value": 19155.33,
+        "change": 53.85,
+        "change_pct": 0.28
       },
       {
         "name": "Property",
-        "value": 1749.06,
-        "change": 10.12,
-        "change_pct": 0.58
+        "value": 1748.7,
+        "change": 9.76,
+        "change_pct": 0.56
       }
     ],
     "market_summary": {
-      "Total Volume": 185039962.0,
-      "Total Trades": 36654.0,
+      "Total Volume": 196579059.0,
+      "Total Trades": 36944.0,
       "Total Value": 2100525878.0,
-      "Advances": 84.0,
-      "Declines": 83.0,
-      "Unchanged": 58.0
+      "Advances": 86.0,
+      "Declines": 85.0,
+      "Unchanged": 55.0
     }
   },
   "stocks": [
@@ -464,7 +464,7 @@
     {
       "symbol": "GTCAP",
       "name": "GT Capital Holdings, Inc.",
-      "as_of": "Oct 07, 2026 11:59 AM",
+      "as_of": "Oct 07, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/GTCAP_logo.jpg",
       "status": "Open",
       "market_cap": 92141803236.0,
@@ -491,7 +491,7 @@
     {
       "symbol": "SECB",
       "name": "Security Bank Corporation",
-      "as_of": "Oct 07, 2026 11:59 AM",
+      "as_of": "Oct 07, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/32/cl530aeab8r477.jpg",
       "status": "Open",
       "market_cap": 46191933773.1,
@@ -518,7 +518,7 @@
     {
       "symbol": "CBC",
       "name": "China Banking Corporation",
-      "as_of": "Oct 07, 2026 11:59 AM",
+      "as_of": "Oct 07, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/184/cl6678d50er243.png",
       "status": "Open",
       "market_cap": 130530136082.0,
@@ -527,13 +527,13 @@
       "issued_shares": 2691343012.0,
       "free_float_pct": 57.94,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 48.8,
+      "last_traded_price": 48.75,
       "open": 48.7,
       "previous_close": 48.5,
       "previous_close_date": "Oct 06, 2026",
       "change": "up",
-      "change_amount": 0.3,
-      "change_pct": 0.62,
+      "change_amount": 0.25,
+      "change_pct": 0.52,
       "high": 49.3,
       "value": 1508200.0,
       "low": 48.6,
@@ -545,7 +545,7 @@
     {
       "symbol": "MEG",
       "name": "Megaworld Corporation",
-      "as_of": "Oct 07, 2026 11:59 AM",
+      "as_of": "Oct 07, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/127/cl5d098929r713.jpg",
       "status": "Open",
       "market_cap": 70048547003.52,
@@ -572,7 +572,7 @@
     {
       "symbol": "SMC",
       "name": "San Miguel Corporation",
-      "as_of": "Oct 07, 2026 11:59 AM",
+      "as_of": "Oct 07, 2026 01:00 PM",
       "logo_url": null,
       "status": "Open",
       "market_cap": 140053924545.0,
@@ -599,7 +599,7 @@
     {
       "symbol": "MER",
       "name": "Manila Electric Company",
-      "as_of": "Oct 07, 2026 11:59 AM",
+      "as_of": "Oct 07, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/co_MER_logo.gif",
       "status": "Open",
       "market_cap": 464587532209.8,
@@ -608,13 +608,13 @@
       "issued_shares": 1127271117.0,
       "free_float_pct": 26.09,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 414.0,
+      "last_traded_price": 413.8,
       "open": 412.4,
       "previous_close": 412.2,
       "previous_close_date": "Oct 06, 2026",
       "change": "up",
-      "change_amount": 1.8,
-      "change_pct": 0.44,
+      "change_amount": 1.6,
+      "change_pct": 0.39,
       "high": 418.8,
       "value": 30904758.0,
       "low": 412.4,
