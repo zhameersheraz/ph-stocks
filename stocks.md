@@ -1,24 +1,11 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-10-07 00:52:35** UTC_
+_Last updated: **2026-10-07 01:00:37** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
-**Market status:** `CLOSED`  
-**As of:** Oct 7, 2026 8:52 AM  
-
-## Indices
-
-| Index | Value | Change | % Change |
-|---|---:|---:|---:|
-| PSEi | 5,677.12 | +66.09 | +1.15% |
-| All Shares | 3,170.73 | +27.53 | +0.86% |
-| Financials | 1,748.33 | +9.78 | +0.56% |
-| Industrial | 7,294.78 | +134.21 | +1.81% |
-| Holding Firms | 4,123.60 | +6.01 | +0.15% |
-| Services | 3,097.30 | +38.75 | +1.24% |
-| Mining and Oil | 19,101.48 | +465.47 | +2.38% |
-| Property | 1,738.94 | +26.78 | +1.52% |
+**Market status:** `PREOPEN`  
+**As of:** Oct 7, 2026 9:00 AM  
 
 ## Market Summary
 
