@@ -1,57 +1,57 @@
 {
-  "generated_utc": "2026-10-08 04:30:35",
+  "generated_utc": "2026-10-08 05:00:40",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 8, 2026 12:30 PM",
-    "market_status": "RECESS",
+    "as_of": "Oct 8, 2026 1:00 PM",
+    "market_status": "OPEN",
     "indices": [
       {
         "name": "PSEi",
-        "value": 5654.73,
-        "change": 81.96,
-        "change_pct": 1.43
+        "value": 5651.76,
+        "change": 84.93,
+        "change_pct": 1.48
       },
       {
         "name": "All Shares",
-        "value": 3155.99,
-        "change": 36.0,
-        "change_pct": 1.13
+        "value": 3155.35,
+        "change": 36.64,
+        "change_pct": 1.15
       },
       {
         "name": "Financials",
-        "value": 1753.74,
-        "change": 17.44,
-        "change_pct": 0.99
+        "value": 1751.22,
+        "change": 19.96,
+        "change_pct": 1.13
       },
       {
         "name": "Industrial",
-        "value": 7230.6,
-        "change": 40.96,
-        "change_pct": 0.56
+        "value": 7235.38,
+        "change": 36.18,
+        "change_pct": 0.5
       },
       {
         "name": "Holding Firms",
-        "value": 4151.57,
-        "change": 31.23,
-        "change_pct": 0.75
+        "value": 4150.36,
+        "change": 32.44,
+        "change_pct": 0.78
       },
       {
         "name": "Services",
-        "value": 3051.31,
-        "change": 62.69,
-        "change_pct": 2.01
+        "value": 3049.08,
+        "change": 64.92,
+        "change_pct": 2.09
       },
       {
         "name": "Mining and Oil",
-        "value": 18732.99,
-        "change": 679.25,
-        "change_pct": 3.5
+        "value": 18743.31,
+        "change": 668.93,
+        "change_pct": 3.45
       },
       {
         "name": "Property",
-        "value": 1735.67,
-        "change": 26.04,
-        "change_pct": 1.48
+        "value": 1736.77,
+        "change": 24.94,
+        "change_pct": 1.42
       }
     ],
     "market_summary": {
@@ -67,7 +67,7 @@
     {
       "symbol": "SM",
       "name": "SM Investments Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": null,
       "status": "Open",
       "market_cap": 623940027600.0,
@@ -94,7 +94,7 @@
     {
       "symbol": "SMPH",
       "name": "SM Prime Holdings, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/112/cl53197f55r962.jpg",
       "status": "Open",
       "market_cap": 463688207492.2,
@@ -121,7 +121,7 @@
     {
       "symbol": "JFC",
       "name": "Jollibee Foods Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/co_JFC_logo.jpg",
       "status": "Open",
       "market_cap": 158018790804.0,
@@ -130,13 +130,13 @@
       "issued_shares": 1137147984.0,
       "free_float_pct": 46.03,
       "foreign_ownership_limit_pct": 100.0,
-      "last_traded_price": 139.8,
+      "last_traded_price": 139.9,
       "open": 141.0,
       "previous_close": 141.0,
       "previous_close_date": "Oct 07, 2026",
       "change": "down",
-      "change_amount": 1.2,
-      "change_pct": 0.85,
+      "change_amount": 1.1,
+      "change_pct": 0.78,
       "high": 141.4,
       "value": 18976846.0,
       "low": 139.5,
@@ -148,7 +148,7 @@
     {
       "symbol": "AC",
       "name": "Ayala Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/57/cl691d7039r503.png",
       "status": "Open",
       "market_cap": 335025491580.0,
@@ -175,7 +175,7 @@
     {
       "symbol": "ALI",
       "name": "Ayala Land, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/180/cl53741ab0r275.JPG",
       "status": "Open",
       "market_cap": 220104824462.6,
@@ -184,13 +184,13 @@
       "issued_shares": 16712819848.0,
       "free_float_pct": 44.84,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 15.2,
+      "last_traded_price": 15.18,
       "open": 15.4,
       "previous_close": 15.4,
       "previous_close_date": "Oct 07, 2026",
       "change": "down",
-      "change_amount": 0.2,
-      "change_pct": 1.3,
+      "change_amount": 0.22,
+      "change_pct": 1.43,
       "high": 15.4,
       "value": 94723164.0,
       "low": 15.14,
@@ -202,7 +202,7 @@
     {
       "symbol": "BDO",
       "name": "BDO Unibank, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/bdoLOGO1.jpg",
       "status": "Open",
       "market_cap": 593363748216.0,
@@ -229,7 +229,7 @@
     {
       "symbol": "BPI",
       "name": "Bank of the Philippine Islands",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/234/cl61a83813r307.jpg",
       "status": "Open",
       "market_cap": 506332281098.8,
@@ -238,13 +238,13 @@
       "issued_shares": 5296362773.0,
       "free_float_pct": 48.61,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 93.35,
+      "last_traded_price": 93.7,
       "open": 95.6,
       "previous_close": 95.6,
       "previous_close_date": "Oct 07, 2026",
       "change": "down",
-      "change_amount": 2.25,
-      "change_pct": 2.35,
+      "change_amount": 1.9,
+      "change_pct": 1.99,
       "high": 95.6,
       "value": 78000781.5,
       "low": 93.35,
@@ -256,7 +256,7 @@
     {
       "symbol": "GLO",
       "name": "Globe Telecom, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/69/cl619dfd54r447.png",
       "status": "Open",
       "market_cap": 221430939794.0,
@@ -265,13 +265,13 @@
       "issued_shares": 144631574.0,
       "free_float_pct": 21.85,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 1518.0,
+      "last_traded_price": 1519.0,
       "open": 1531.0,
       "previous_close": 1531.0,
       "previous_close_date": "Oct 07, 2026",
       "change": "down",
-      "change_amount": 13.0,
-      "change_pct": 0.85,
+      "change_amount": 12.0,
+      "change_pct": 0.78,
       "high": 1534.0,
       "value": 27431970.0,
       "low": 1511.0,
@@ -283,7 +283,7 @@
     {
       "symbol": "MBT",
       "name": "Metropolitan Bank & Trust Company",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/128/cl5ee1971ar919.png",
       "status": "Open",
       "market_cap": 279289505965.5,
@@ -310,7 +310,7 @@
     {
       "symbol": "URC",
       "name": "Universal Robina Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/124/cl5b0fbcaer79.png",
       "status": "Open",
       "market_cap": 119411792037.3,
@@ -337,7 +337,7 @@
     {
       "symbol": "TEL",
       "name": "PLDT Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/6/cl5760e7b5r301.jpg",
       "status": "Open",
       "market_cap": 245871471950.0,
@@ -346,13 +346,13 @@
       "issued_shares": 218779886.0,
       "free_float_pct": 42.09,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 1122.0,
+      "last_traded_price": 1125.0,
       "open": 1139.0,
       "previous_close": 1138.0,
       "previous_close_date": "Oct 07, 2026",
       "change": "down",
-      "change_amount": 16.0,
-      "change_pct": 1.41,
+      "change_amount": 13.0,
+      "change_pct": 1.14,
       "high": 1139.0,
       "value": 23763410.0,
       "low": 1122.0,
@@ -364,7 +364,7 @@
     {
       "symbol": "JGS",
       "name": "JG Summit Holdings, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/co_JGS_logo.gif",
       "status": "Open",
       "market_cap": 129060079571.28,
@@ -391,7 +391,7 @@
     {
       "symbol": "LTG",
       "name": "LT Group, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/co_LTG_logo.png",
       "status": "Open",
       "market_cap": 167082244446.16,
@@ -418,7 +418,7 @@
     {
       "symbol": "PGOLD",
       "name": "Puregold Price Club, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/629/cl5434f0b1r53.jpg",
       "status": "Open",
       "market_cap": 116645573407.5,
@@ -445,7 +445,7 @@
     {
       "symbol": "RRHI",
       "name": "Robinsons Retail Holdings, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/646/cl530e9909r430.jpg",
       "status": "Suspended",
       "market_cap": 40493504330.0,
@@ -464,7 +464,7 @@
     {
       "symbol": "GTCAP",
       "name": "GT Capital Holdings, Inc.",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/GTCAP_logo.jpg",
       "status": "Open",
       "market_cap": 90419526540.0,
@@ -491,7 +491,7 @@
     {
       "symbol": "SECB",
       "name": "Security Bank Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/32/cl530aeab8r477.jpg",
       "status": "Open",
       "market_cap": 46229610717.45,
@@ -518,7 +518,7 @@
     {
       "symbol": "CBC",
       "name": "China Banking Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/184/cl6678d50er243.png",
       "status": "Open",
       "market_cap": 131202971835.0,
@@ -545,7 +545,7 @@
     {
       "symbol": "MEG",
       "name": "Megaworld Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/127/cl5d098929r713.jpg",
       "status": "Open",
       "market_cap": 70372845832.24,
@@ -554,13 +554,13 @@
       "issued_shares": 33745865872.0,
       "free_float_pct": 25.63,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 2.16,
+      "last_traded_price": 2.17,
       "open": 2.18,
       "previous_close": 2.17,
       "previous_close_date": "Oct 07, 2026",
-      "change": "down",
-      "change_amount": 0.01,
-      "change_pct": 0.46,
+      "change": "up",
+      "change_amount": 0.0,
+      "change_pct": 0.0,
       "high": 2.18,
       "value": 76873780.0,
       "low": 2.15,
@@ -572,7 +572,7 @@
     {
       "symbol": "SMC",
       "name": "San Miguel Corporation",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": null,
       "status": "Open",
       "market_cap": 142795405621.2,
@@ -599,7 +599,7 @@
     {
       "symbol": "MER",
       "name": "Manila Electric Company",
-      "as_of": "Oct 08, 2026 11:59 AM",
+      "as_of": "Oct 08, 2026 01:00 PM",
       "logo_url": "https://edge.pse.com.ph/clogo/co_MER_logo.gif",
       "status": "Open",
       "market_cap": 466616298726.0,
@@ -608,13 +608,13 @@
       "issued_shares": 1127271117.0,
       "free_float_pct": 26.09,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 414.2,
+      "last_traded_price": 414.0,
       "open": 418.6,
       "previous_close": 414.0,
       "previous_close_date": "Oct 07, 2026",
       "change": "up",
-      "change_amount": 0.2,
-      "change_pct": 0.05,
+      "change_amount": 0.0,
+      "change_pct": 0.0,
       "high": 418.6,
       "value": 48851104.0,
       "low": 410.0,
