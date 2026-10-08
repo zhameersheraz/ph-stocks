@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-08 09:30:31",
+  "generated_utc": "2026-10-08 10:00:43",
   "source": "https://edge.pse.com.ph",
   "index": {
     "as_of": "Oct 8, 2026 5:00 PM",
@@ -279,33 +279,6 @@
       "average_price": 1528.38,
       "fifty_two_week_high": 1964.0,
       "fifty_two_week_low": 1401.0
-    },
-    {
-      "symbol": "MBT",
-      "name": "Metropolitan Bank & Trust Company",
-      "as_of": "Oct 08, 2026 02:50 PM",
-      "logo_url": "https://edge.pse.com.ph/clogo/128/cl5ee1971ar919.png",
-      "status": "Open",
-      "market_cap": 279289505965.5,
-      "outstanding_shares": 4497415555.0,
-      "listed_shares": 4497415555.0,
-      "issued_shares": 4497415555.0,
-      "free_float_pct": 47.83,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 60.05,
-      "open": 61.55,
-      "previous_close": 62.1,
-      "previous_close_date": "Oct 07, 2026",
-      "change": "down",
-      "change_amount": 2.05,
-      "change_pct": 3.3,
-      "high": 61.55,
-      "value": 314382122.0,
-      "low": 60.05,
-      "volume": 5189200.0,
-      "average_price": 60.58,
-      "fifty_two_week_high": 78.25,
-      "fifty_two_week_low": 60.4
     },
     {
       "symbol": "URC",
