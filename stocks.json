@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-10-15 23:30:33",
+  "generated_utc": "2026-10-16 00:00:43",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 15, 2026 5:29 PM",
+    "as_of": "Oct 16, 2026 8:00 AM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -55,12 +55,12 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 664919029.0,
-      "Total Trades": 73927.0,
-      "Total Value": 6991295379.0,
-      "Advances": 91.0,
-      "Declines": 89.0,
-      "Unchanged": 66.0
+      "Total Volume": 0.0,
+      "Total Trades": 0.0,
+      "Total Value": 0.0,
+      "Advances": 0.0,
+      "Declines": 0.0,
+      "Unchanged": 0.0
     }
   },
   "stocks": [
@@ -568,60 +568,6 @@
       "average_price": 2.23,
       "fifty_two_week_high": 2.38,
       "fifty_two_week_low": 1.9
-    },
-    {
-      "symbol": "SMC",
-      "name": "San Miguel Corporation",
-      "as_of": "Oct 15, 2026 02:50 PM",
-      "logo_url": null,
-      "status": "Open",
-      "market_cap": 147801588456.0,
-      "outstanding_shares": 2383896588.0,
-      "listed_shares": 2340981689.0,
-      "issued_shares": 2383896588.0,
-      "free_float_pct": 20.59,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 63.5,
-      "open": 62.0,
-      "previous_close": 62.0,
-      "previous_close_date": "Oct 15, 2026",
-      "change": "up",
-      "change_amount": 1.5,
-      "change_pct": 2.42,
-      "high": 63.7,
-      "value": 14615046.5,
-      "low": 62.0,
-      "volume": 231220.0,
-      "average_price": 63.21,
-      "fifty_two_week_high": 86.0,
-      "fifty_two_week_low": 55.0
-    },
-    {
-      "symbol": "MER",
-      "name": "Manila Electric Company",
-      "as_of": "Oct 15, 2026 02:50 PM",
-      "logo_url": "https://edge.pse.com.ph/clogo/co_MER_logo.gif",
-      "status": "Open",
-      "market_cap": 501556166505.0,
-      "outstanding_shares": 1127092509.0,
-      "listed_shares": 1127271117.0,
-      "issued_shares": 1127271117.0,
-      "free_float_pct": 26.09,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 437.0,
-      "open": 445.0,
-      "previous_close": 445.0,
-      "previous_close_date": "Oct 15, 2026",
-      "change": "down",
-      "change_amount": 8.0,
-      "change_pct": 1.8,
-      "high": 445.0,
-      "value": 49170334.0,
-      "low": 437.0,
-      "volume": 111900.0,
-      "average_price": 439.41,
-      "fifty_two_week_high": 679.5,
-      "fifty_two_week_low": 410.0
     }
   ]
 }

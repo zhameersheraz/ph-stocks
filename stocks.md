@@ -1,11 +1,11 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-10-15 23:30:33** UTC_
+_Last updated: **2026-10-16 00:00:43** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 **Market status:** `CLOSED`  
-**As of:** Oct 15, 2026 5:29 PM  
+**As of:** Oct 16, 2026 8:00 AM  
 
 ## Indices
 
@@ -24,16 +24,16 @@ _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 | Metric | Value |
 |---|---:|
-| Total Volume | 664.92M |
-| Total Trades | 73.9K |
-| Total Value | 6.99B |
-| Advances | 91 |
-| Declines | 89 |
-| Unchanged | 66 |
+| Total Volume | 0 |
+| Total Trades | 0 |
+| Total Value | 0 |
+| Advances | 0 |
+| Declines | 0 |
+| Unchanged | 0 |
 
 ## Stocks
 
-_Tracking 21 Philippine blue chips._
+_Tracking 19 Philippine blue chips._
 
 | Symbol | Last | Open | High | Low | Prev Close | Change | Volume | Value | Mkt Cap |
 |---|---:|---:|---:|---:|---:|---|---:|---:|---:|
@@ -49,12 +49,10 @@ _Tracking 21 Philippine blue chips._
 | **LTG** | ₱15.26 | ₱15.26 | ₱15.34 | ₱15.26 | ₱15.30 | ▼ -0.04 (-0.26%) | 657.0K | 10.05M | 165.57B |
 | **MBT** | ₱60.90 | ₱60.50 | ₱60.90 | ₱59.80 | ₱60.75 | ▲ +0.15 (+0.25%) | 1.92M | 116.21M | 273.22B |
 | **MEG** | ₱2.23 | ₱2.20 | ₱2.24 | ₱2.20 | ₱2.20 | ▲ +0.03 (+1.36%) | 3.52M | 7.85M | 71.35B |
-| **MER** | ₱437.00 | ₱445.00 | ₱445.00 | ₱437.00 | ₱445.00 | ▼ -8.00 (-1.80%) | 111.9K | 49.17M | 501.56B |
 | **PGOLD** | ₱40.00 | ₱40.00 | ₱40.30 | ₱39.80 | ₱40.00 | ▲ +0.00 (+0.00%) | 227.5K | 9.10M | 115.21B |
 | **RRHI** | ₱38.00 | — | — | — | ₱38.00 | — | — | — | 40.49B |
 | **SECB** | ₱61.40 | ₱61.35 | ₱62.50 | ₱61.30 | ₱61.35 | ▲ +0.05 (+0.08%) | 410.1K | 25.17M | 46.23B |
 | **SM** | ₱537.00 | ₱530.00 | ₱537.00 | ₱524.50 | ₱531.00 | ▲ +6.00 (+1.13%) | 309.4K | 164.01M | 642.08B |
-| **SMC** | ₱63.50 | ₱62.00 | ₱63.70 | ₱62.00 | ₱62.00 | ▲ +1.50 (+2.42%) | 231.2K | 14.62M | 147.80B |
 | **SMPH** | ₱16.68 | ₱15.90 | ₱16.74 | ₱15.90 | ₱15.80 | ▲ +0.88 (+5.57%) | 14.60M | 241.45M | 449.18B |
 | **TEL** | ₱1,200.00 | ₱1,190.00 | ₱1,202.00 | ₱1,188.00 | ₱1,193.00 | ▲ +7.00 (+0.59%) | 137.1K | 164.10M | 257.75B |
 | **URC** | ₱59.95 | ₱59.05 | ₱60.00 | ₱59.05 | ₱59.00 | ▲ +0.95 (+1.61%) | 1.28M | 76.54M | 124.89B |
