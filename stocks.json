@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-10-28 04:00:43",
+  "generated_utc": "2026-10-28 04:30:34",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 28, 2026 12:00 PM",
+    "as_of": "Oct 28, 2026 12:30 PM",
     "market_status": "RECESS",
     "indices": [
       {
@@ -55,9 +55,9 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 478575310.0,
-      "Total Trades": 45512.0,
-      "Total Value": 3400515037.0,
+      "Total Volume": 478800984.0,
+      "Total Trades": 45610.0,
+      "Total Value": 3407468536.0,
       "Advances": 59.0,
       "Declines": 100.0,
       "Unchanged": 58.0
@@ -84,9 +84,9 @@
       "change_amount": 13.5,
       "change_pct": 2.48,
       "high": 543.0,
-      "value": 27528050.0,
+      "value": 27586515.0,
       "low": 531.0,
-      "volume": 51560.0,
+      "volume": 51670.0,
       "average_price": 533.9,
       "fifty_two_week_high": 757.5,
       "fifty_two_week_low": 486.2
@@ -111,9 +111,9 @@
       "change_amount": 0.4,
       "change_pct": 2.27,
       "high": 17.54,
-      "value": 26873404.0,
+      "value": 27284484.0,
       "low": 17.14,
-      "volume": 1558900.0,
+      "volume": 1582800.0,
       "average_price": 17.24,
       "fifty_two_week_high": 24.15,
       "fifty_two_week_low": 15.4
@@ -192,9 +192,9 @@
       "change_amount": 0.34,
       "change_pct": 2.19,
       "high": 15.38,
-      "value": 42842514.0,
+      "value": 42907874.0,
       "low": 15.12,
-      "volume": 2814700.0,
+      "volume": 2819000.0,
       "average_price": 15.22,
       "fifty_two_week_high": 23.65,
       "fifty_two_week_low": 12.58
@@ -246,10 +246,10 @@
       "change_amount": 5.25,
       "change_pct": 5.3,
       "high": 96.8,
-      "value": 124563857.0,
+      "value": 124953857.0,
       "low": 93.2,
-      "volume": 1321280.0,
-      "average_price": 94.28,
+      "volume": 1325440.0,
+      "average_price": 94.27,
       "fifty_two_week_high": 125.5,
       "fifty_two_week_low": 87.0
     },
@@ -300,9 +300,9 @@
       "change_amount": 1.3,
       "change_pct": 2.1,
       "high": 61.45,
-      "value": 21946817.5,
+      "value": 21964391.5,
       "low": 60.5,
-      "volume": 361690.0,
+      "volume": 361980.0,
       "average_price": 60.68,
       "fifty_two_week_high": 78.25,
       "fifty_two_week_low": 58.5
@@ -319,7 +319,7 @@
       "issued_shares": 2230160190.0,
       "free_float_pct": 42.58,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 59.3,
+      "last_traded_price": 59.35,
       "open": 58.25,
       "previous_close": 57.25,
       "previous_close_date": "Oct 27, 2026",
@@ -327,9 +327,9 @@
       "change_amount": 2.1,
       "change_pct": 3.67,
       "high": 59.8,
-      "value": 33822252.0,
+      "value": 34429372.0,
       "low": 57.5,
-      "volume": 570820.0,
+      "volume": 581050.0,
       "average_price": 59.25,
       "fifty_two_week_high": 82.0,
       "fifty_two_week_low": 55.1
