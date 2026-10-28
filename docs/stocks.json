@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-10-27 23:30:33",
+  "generated_utc": "2026-10-28 00:00:41",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Oct 27, 2026 5:29 PM",
+    "as_of": "Oct 28, 2026 8:00 AM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -55,12 +55,12 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 1122572866.0,
-      "Total Trades": 105525.0,
-      "Total Value": 9522058755.0,
-      "Advances": 104.0,
-      "Declines": 66.0,
-      "Unchanged": 76.0
+      "Total Volume": 0.0,
+      "Total Trades": 0.0,
+      "Total Value": 0.0,
+      "Advances": 0.0,
+      "Declines": 0.0,
+      "Unchanged": 0.0
     }
   },
   "stocks": [
@@ -541,87 +541,6 @@
       "average_price": 48.68,
       "fifty_two_week_high": 71.0,
       "fifty_two_week_low": 46.65
-    },
-    {
-      "symbol": "MEG",
-      "name": "Megaworld Corporation",
-      "as_of": "Oct 27, 2026 02:50 PM",
-      "logo_url": "https://edge.pse.com.ph/clogo/127/cl5d098929r713.jpg",
-      "status": "Open",
-      "market_cap": 73291535290.72,
-      "outstanding_shares": 32429882872.0,
-      "listed_shares": 33745865872.0,
-      "issued_shares": 33745865872.0,
-      "free_float_pct": 25.63,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 2.3,
-      "open": 2.26,
-      "previous_close": 2.26,
-      "previous_close_date": "Oct 27, 2026",
-      "change": "up",
-      "change_amount": 0.04,
-      "change_pct": 1.77,
-      "high": 2.31,
-      "value": 42899270.0,
-      "low": 2.26,
-      "volume": 18693000.0,
-      "average_price": 2.29,
-      "fifty_two_week_high": 2.38,
-      "fifty_two_week_low": 1.9
-    },
-    {
-      "symbol": "SMC",
-      "name": "San Miguel Corporation",
-      "as_of": "Oct 27, 2026 02:50 PM",
-      "logo_url": null,
-      "status": "Open",
-      "market_cap": 155549252367.0,
-      "outstanding_shares": 2383896588.0,
-      "listed_shares": 2340981689.0,
-      "issued_shares": 2383896588.0,
-      "free_float_pct": 20.59,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 66.0,
-      "open": 65.3,
-      "previous_close": 65.25,
-      "previous_close_date": "Oct 27, 2026",
-      "change": "up",
-      "change_amount": 0.75,
-      "change_pct": 1.15,
-      "high": 66.2,
-      "value": 15180486.0,
-      "low": 65.3,
-      "volume": 230060.0,
-      "average_price": 65.98,
-      "fifty_two_week_high": 86.0,
-      "fifty_two_week_low": 55.0
-    },
-    {
-      "symbol": "MER",
-      "name": "Manila Electric Company",
-      "as_of": "Oct 27, 2026 02:50 PM",
-      "logo_url": "https://edge.pse.com.ph/clogo/co_MER_logo.gif",
-      "status": "Open",
-      "market_cap": 478788897823.2,
-      "outstanding_shares": 1127092509.0,
-      "listed_shares": 1127271117.0,
-      "issued_shares": 1127271117.0,
-      "free_float_pct": 26.09,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 441.6,
-      "open": 425.0,
-      "previous_close": 424.8,
-      "previous_close_date": "Oct 27, 2026",
-      "change": "up",
-      "change_amount": 16.8,
-      "change_pct": 3.95,
-      "high": 441.6,
-      "value": 192331206.0,
-      "low": 424.0,
-      "volume": 440450.0,
-      "average_price": 436.67,
-      "fifty_two_week_high": 679.5,
-      "fifty_two_week_low": 410.0
     }
   ]
 }
