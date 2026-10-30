@@ -1,11 +1,11 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-10-30 07:00:38** UTC_
+_Last updated: **2026-10-30 07:30:35** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 **Market status:** `CLOSED`  
-**As of:** Oct 30, 2026 3:00 PM  
+**As of:** Oct 30, 2026 3:30 PM  
 
 ## Indices
 
@@ -24,8 +24,8 @@ _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 | Metric | Value |
 |---|---:|
-| Total Volume | 685.51M |
-| Total Trades | 60.8K |
+| Total Volume | 685.57M |
+| Total Trades | 60.9K |
 | Total Value | 17.14B |
 | Advances | 63 |
 | Declines | 110 |
@@ -37,7 +37,7 @@ _Tracking 21 Philippine blue chips._
 
 | Symbol | Last | Open | High | Low | Prev Close | Change | Volume | Value | Mkt Cap |
 |---|---:|---:|---:|---:|---:|---|---:|---:|---:|
-| **AC** | ₱535.00 | ₱539.00 | ₱540.50 | ₱531.50 | ₱539.00 | ▼ -4.00 (-0.74%) | 728.0K | 390.34M | 334.41B |
+| **AC** | ₱535.00 | ₱539.00 | ₱540.50 | ₱531.50 | ₱539.00 | ▼ -4.00 (-0.74%) | 728.0K | 390.38M | 334.41B |
 | **ALI** | ₱15.36 | ₱15.32 | ₱15.36 | ₱15.16 | ₱15.34 | ▲ +0.02 (+0.13%) | 1.78M | 27.14M | 219.25B |
 | **BDO** | ₱118.00 | ₱117.50 | ₱118.40 | ₱117.40 | ₱117.40 | ▲ +0.60 (+0.51%) | 2.94M | 346.72M | 626.46B |
 | **BPI** | ₱94.00 | ₱95.00 | ₱95.50 | ₱93.75 | ₱95.00 | ▼ -1.00 (-1.05%) | 1.51M | 142.47M | 503.15B |
