@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-03 04:00:40",
+  "generated_utc": "2026-11-03 04:30:30",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Nov 3, 2026 12:00 PM",
+    "as_of": "Nov 3, 2026 12:30 PM",
     "market_status": "RECESS",
     "indices": [
       {
@@ -55,9 +55,9 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 442993857.0,
-      "Total Trades": 52546.0,
-      "Total Value": 2169880364.0,
+      "Total Volume": 443452317.0,
+      "Total Trades": 52642.0,
+      "Total Value": 2177919911.0,
       "Advances": 79.0,
       "Declines": 98.0,
       "Unchanged": 67.0
@@ -165,9 +165,9 @@
       "change_amount": 7.0,
       "change_pct": 1.31,
       "high": 539.0,
-      "value": 60726025.0,
+      "value": 60878880.0,
       "low": 521.0,
-      "volume": 115250.0,
+      "volume": 115540.0,
       "average_price": 526.91,
       "fifty_two_week_high": 600.0,
       "fifty_two_week_low": 373.0
@@ -219,9 +219,9 @@
       "change_amount": 0.8,
       "change_pct": 0.68,
       "high": 119.8,
-      "value": 117234750.0,
+      "value": 117239502.0,
       "low": 118.1,
-      "volume": 984300.0,
+      "volume": 984340.0,
       "average_price": 119.1,
       "fifty_two_week_high": 144.6,
       "fifty_two_week_low": 109.2
@@ -265,7 +265,7 @@
       "issued_shares": 144631574.0,
       "free_float_pct": 21.85,
       "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 1534.0,
+      "last_traded_price": 1537.0,
       "open": 1529.0,
       "previous_close": 1530.0,
       "previous_close_date": "Oct 30, 2026",
@@ -327,9 +327,9 @@
       "change_amount": 0.35,
       "change_pct": 0.59,
       "high": 59.25,
-      "value": 16468300.5,
+      "value": 16484778.5,
       "low": 58.55,
-      "volume": 279220.0,
+      "volume": 279500.0,
       "average_price": 58.98,
       "fifty_two_week_high": 82.0,
       "fifty_two_week_low": 55.1
@@ -435,9 +435,9 @@
       "change_amount": 0.5,
       "change_pct": 1.25,
       "high": 40.0,
-      "value": 6323745.0,
+      "value": 6382990.0,
       "low": 39.35,
-      "volume": 159600.0,
+      "volume": 161100.0,
       "average_price": 39.62,
       "fifty_two_week_high": 49.1,
       "fifty_two_week_low": 35.45
@@ -616,9 +616,9 @@
       "change_amount": 5.2,
       "change_pct": 1.23,
       "high": 430.0,
-      "value": 25059038.0,
+      "value": 25071884.0,
       "low": 421.8,
-      "volume": 58680.0,
+      "volume": 58710.0,
       "average_price": 427.05,
       "fifty_two_week_high": 679.5,
       "fifty_two_week_low": 410.0
