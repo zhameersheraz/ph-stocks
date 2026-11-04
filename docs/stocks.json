@@ -1,14 +1,14 @@
 {
-  "generated_utc": "2026-11-04 01:00:41",
+  "generated_utc": "2026-11-04 01:30:33",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Nov 4, 2026 9:00 AM",
+    "as_of": "Nov 4, 2026 9:29 AM",
     "market_status": "PREOPEN",
     "indices": [],
     "market_summary": {
-      "Total Volume": 0.0,
-      "Total Trades": 0.0,
-      "Total Value": 0.0,
+      "Total Volume": 10372900.0,
+      "Total Trades": 4.0,
+      "Total Value": 263138448.0,
       "Advances": 0.0,
       "Declines": 0.0,
       "Unchanged": 0.0
