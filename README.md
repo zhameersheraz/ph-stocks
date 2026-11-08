@@ -3,12 +3,12 @@
 ![banner](docs/banner.svg)
 
 > ## 📈 **[Live site → https://zhameersheraz.github.io/ph-stocks/](https://zhameersheraz.github.io/ph-stocks/)**
-> Auto-updated every 30 minutes — 21 Philippine blue chips from PSE Edge, with 90-day candlestick charts.
+> Auto-updated every hour — 21 Philippine blue chips from PSE Edge, with 90-day candlestick charts.
 
-Philippine Stock Exchange snapshot, auto-updated every 30 minutes.
+Philippine Stock Exchange snapshot, Auto-updated every hour.
 
 - **Source**: [PSE Edge](https://edge.pse.com.ph) — official disclosure portal of the PSE
-- **Refresh**: GitHub Actions cron every 30 minutes, plus on-demand via `repository_dispatch`
+- **Refresh**: GitHub Actions cron every hour, plus on-demand via the manual `workflow_dispatch` trigger
 - **Output**: `stocks.md` (human-readable) and `stocks.json` (machine-readable)
 - **Stack**: Python stdlib only — no external dependencies, no API keys
 - **Live site**: [GitHub Pages](https://zhameersheraz.github.io/ph-stocks/) — auto-deployed from `docs/`
@@ -32,7 +32,7 @@ and the as-of timestamp straight from PSE Edge.
 | File | Purpose |
 |------|---------|
 | `update.py` | Fetcher + parser + renderer. Pure Python stdlib. |
-| `.github/workflows/update.yml` | 30-min cron + manual + dispatch triggers. |
+| `.github/workflows/update.yml` | Hourly cron + manual `workflow_dispatch` trigger. |
 | `stocks.md` | Latest snapshot (markdown). |
 | `stocks.json` | Latest snapshot (JSON, schema: see below). |
 | `docs/index.html` | GitHub Pages dashboard (loads `stocks.json`). |
