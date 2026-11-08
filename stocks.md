@@ -1,8 +1,8 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-11-08 19:30:32** UTC_
+_Last updated: **2026-11-08 23:15:37** UTC_
 
-_Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
+_Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every hour_
 
 **Market status:** `CLOSED`  
 **As of:** Nov 6, 2026 5:29 PM  
@@ -33,7 +33,7 @@ _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_
 
 ## Stocks
 
-_Tracking 21 Philippine blue chips._
+_Tracking 20 Philippine blue chips._
 
 | Symbol | Last | Open | High | Low | Prev Close | Change | Volume | Value | Mkt Cap |
 |---|---:|---:|---:|---:|---:|---|---:|---:|---:|
@@ -48,7 +48,6 @@ _Tracking 21 Philippine blue chips._
 | **JGS** | ₱17.30 | ₱17.38 | ₱17.50 | ₱16.90 | ₱17.42 | ▼ -0.12 (-0.69%) | 1.40M | 24.06M | 131.02B |
 | **LTG** | ₱15.42 | ₱15.14 | ₱15.42 | ₱15.08 | ₱15.14 | ▲ +0.28 (+1.85%) | 1.87M | 28.59M | 163.84B |
 | **MBT** | ₱61.20 | ₱60.80 | ₱61.65 | ₱60.45 | ₱61.00 | ▲ +0.20 (+0.33%) | 2.91M | 177.84M | 274.34B |
-| **MEG** | ₱2.30 | ₱2.33 | ₱2.33 | ₱2.29 | ₱2.31 | ▼ -0.01 (-0.43%) | 9.46M | 21.75M | 74.91B |
 | **MER** | ₱446.00 | ₱449.00 | ₱449.00 | ₱436.00 | ₱449.00 | ▼ -3.00 (-0.67%) | 261.0K | 115.73M | 506.06B |
 | **PGOLD** | ₱39.10 | ₱39.65 | ₱40.10 | ₱39.10 | ₱39.55 | ▼ -0.45 (-1.14%) | 1.76M | 69.96M | 113.91B |
 | **RRHI** | ₱38.00 | — | — | — | ₱38.00 | — | — | — | 40.49B |
@@ -61,5 +60,5 @@ _Tracking 21 Philippine blue chips._
 
 ---
 
-Auto-updated every 30 minutes by `.github/workflows/update.yml`.  
+Auto-updated every hour by `.github/workflows/update.yml`.  
 Data source: [PSE Edge](https://edge.pse.com.ph).
