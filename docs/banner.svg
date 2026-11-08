@@ -103,7 +103,7 @@
     <text x="280" y="322" font-size="14" fill="#90caf9">Philippine blue chips</text>
 
     <text x="460" y="270" font-size="14" fill="#78909c" letter-spacing="2">REFRESH</text>
-    <text x="460" y="300" font-size="32" font-weight="700" fill="#ffffff">30m</text>
+    <text x="460" y="300" font-size="32" font-weight="700" fill="#ffffff">>30m</text>h</text>
     <text x="460" y="322" font-size="14" fill="#90caf9">via GitHub Actions</text>
   </g>
 
