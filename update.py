@@ -190,7 +190,7 @@ def _chg(c):
 def render_md(quotes, index, gen):
     L = ["# ph-stocks — Philippine Stock Exchange snapshot","",
          f"_Last updated: **{gen}** UTC_","",
-         "_Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every 30 minutes_",""]
+         "_Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every hour_",""]
     if index:
         if index.get("market_status"):
             L.append(f"**Market status:** `{index['market_status']}`  ")
@@ -218,7 +218,7 @@ def render_md(quotes, index, gen):
                  f"{_money(q.get('previous_close'))} | {_chg(q)} | {_num(q.get('volume'))} | "
                  f"{_num(q.get('value'))} | {_num(q.get('market_cap'))} |")
     L += ["","---","",
-          "Auto-updated every 30 minutes by `.github/workflows/update.yml`.  ",
+          "Auto-updated every hour by `.github/workflows/update.yml`.  ",
           "Data source: [PSE Edge](https://edge.pse.com.ph).",""]
     return "\n".join(L)
 
