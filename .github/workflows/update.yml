@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [tick]
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -10,16 +12,38 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Throttle to one refresh per hour
+        id: gate
+        run: |
+          set -uo pipefail
+          NOW=$(date -u +%s)
+          LAST=$(git log -1 --format=%ct -- stocks.json 2>/dev/null || echo 0)
+          if [ "${LAST:-0}" -gt 0 ]; then
+            AGE=$(( NOW - LAST ))
+            if [ "$AGE" -lt 3540 ]; then
+              echo "run=false" >> "$GITHUB_OUTPUT"
+              echo "last snapshot refresh was ${AGE}s ago, skipping this run"
+              exit 0
+            fi
+          fi
+          echo "run=true" >> "$GITHUB_OUTPUT"
+          echo "no snapshot refresh in the last 59 minutes, running"
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
         with:
           python-version: '3.11'
       - name: Run update
+        if: steps.gate.outputs.run == 'true'
         run: python update.py
       - name: Sync to docs/ for GitHub Pages
+        if: steps.gate.outputs.run == 'true'
         run: |
           cp stocks.json docs/stocks.json
           cp history.json docs/history.json
       - name: Commit if changed
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name  "zham"
           git config user.email "zhameersheraztampugao@gmail.com"
