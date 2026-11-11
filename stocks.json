@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-11 07:00:40",
+  "generated_utc": "2026-11-11 08:30:37",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Nov 11, 2026 3:00 PM",
+    "as_of": "Nov 11, 2026 4:29 PM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -55,9 +55,9 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 939109304.0,
-      "Total Trades": 99467.0,
-      "Total Value": 6064610959.0,
+      "Total Volume": 939397914.0,
+      "Total Trades": 99477.0,
+      "Total Value": 6078115780.0,
       "Advances": 81.0,
       "Declines": 85.0,
       "Unchanged": 65.0
@@ -138,9 +138,9 @@
       "change_amount": 7.5,
       "change_pct": 5.08,
       "high": 155.0,
-      "value": 152735485.0,
+      "value": 152740135.0,
       "low": 147.5,
-      "volume": 1000480.0,
+      "volume": 1000510.0,
       "average_price": 152.66,
       "fifty_two_week_high": 221.8,
       "fifty_two_week_low": 119.7
@@ -165,10 +165,10 @@
       "change_amount": 3.0,
       "change_pct": 0.54,
       "high": 561.5,
-      "value": 146173235.0,
+      "value": 156555635.0,
       "low": 552.5,
-      "volume": 261680.0,
-      "average_price": 558.6,
+      "volume": 280220.0,
+      "average_price": 558.69,
       "fifty_two_week_high": 600.0,
       "fifty_two_week_low": 373.0
     },
@@ -481,9 +481,9 @@
       "change_amount": 4.6,
       "change_pct": 1.01,
       "high": 460.8,
-      "value": 16600814.0,
+      "value": 16605410.0,
       "low": 448.0,
-      "volume": 36350.0,
+      "volume": 36360.0,
       "average_price": 456.69,
       "fifty_two_week_high": 713.0,
       "fifty_two_week_low": 404.0
