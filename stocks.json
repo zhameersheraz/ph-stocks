@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-17 07:00:54",
+  "generated_utc": "2026-11-17 08:00:59",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Nov 17, 2026 3:00 PM",
+    "as_of": "Nov 17, 2026 4:00 PM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -55,9 +55,9 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 629263573.0,
-      "Total Trades": 120300.0,
-      "Total Value": 6483221570.0,
+      "Total Volume": 629560218.0,
+      "Total Trades": 120337.0,
+      "Total Value": 6485621128.0,
       "Advances": 70.0,
       "Declines": 99.0,
       "Unchanged": 67.0
@@ -138,9 +138,9 @@
       "change_amount": 0.2,
       "change_pct": 0.13,
       "high": 152.1,
-      "value": 44979648.0,
+      "value": 44981156.0,
       "low": 149.0,
-      "volume": 297800.0,
+      "volume": 297810.0,
       "average_price": 151.04,
       "fifty_two_week_high": 221.8,
       "fifty_two_week_low": 119.7
@@ -192,10 +192,10 @@
       "change_amount": 0.12,
       "change_pct": 0.79,
       "high": 15.1,
-      "value": 66846416.0,
+      "value": 67904004.0,
       "low": 14.92,
-      "volume": 4451900.0,
-      "average_price": 15.02,
+      "volume": 4522500.0,
+      "average_price": 15.01,
       "fifty_two_week_high": 23.65,
       "fifty_two_week_low": 12.58
     },
@@ -273,10 +273,10 @@
       "change_amount": 34.0,
       "change_pct": 2.43,
       "high": 1403.0,
-      "value": 118326120.0,
+      "value": 118469550.0,
       "low": 1356.0,
-      "volume": 85940.0,
-      "average_price": 1376.85,
+      "volume": 86045.0,
+      "average_price": 1376.83,
       "fifty_two_week_high": 1964.0,
       "fifty_two_week_low": 1386.0
     },
@@ -408,9 +408,9 @@
       "change_amount": 0.22,
       "change_pct": 1.43,
       "high": 15.6,
-      "value": 62169504.0,
+      "value": 62263104.0,
       "low": 15.38,
-      "volume": 4003100.0,
+      "volume": 4009100.0,
       "average_price": 15.53,
       "fifty_two_week_high": 16.2,
       "fifty_two_week_low": 13.8
@@ -616,9 +616,9 @@
       "change_amount": 3.0,
       "change_pct": 0.74,
       "high": 414.8,
-      "value": 452766764.0,
+      "value": 452806764.0,
       "low": 393.0,
-      "volume": 1131530.0,
+      "volume": 1131630.0,
       "average_price": 400.14,
       "fifty_two_week_high": 679.5,
       "fifty_two_week_low": 402.0
