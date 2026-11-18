@@ -1,6 +1,6 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-11-18 09:00:42** UTC_
+_Last updated: **2026-11-18 10:00:48** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every hour_
 
