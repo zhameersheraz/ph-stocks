@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-22 23:00:40",
+  "generated_utc": "2026-11-23 00:00:42",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Nov 20, 2026 5:30 PM",
+    "as_of": "Nov 23, 2026 8:00 AM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -55,12 +55,12 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 1062169338.0,
-      "Total Trades": 133681.0,
-      "Total Value": 9980606546.0,
-      "Advances": 41.0,
-      "Declines": 137.0,
-      "Unchanged": 59.0
+      "Total Volume": 0.0,
+      "Total Trades": 0.0,
+      "Total Value": 0.0,
+      "Advances": 0.0,
+      "Declines": 0.0,
+      "Unchanged": 0.0
     }
   },
   "stocks": [
@@ -314,7 +314,7 @@
       "logo_url": "https://edge.pse.com.ph/clogo/124/cl5b0fbcaer79.png",
       "status": "Open",
       "market_cap": 128732952348.0,
-      "outstanding_shares": 2110836268.0,
+      "outstanding_shares": 2110376268.0,
       "listed_shares": 2230160190.0,
       "issued_shares": 2230160190.0,
       "free_float_pct": 42.21,
@@ -568,60 +568,6 @@
       "average_price": 2.16,
       "fifty_two_week_high": 2.38,
       "fifty_two_week_low": 1.94
-    },
-    {
-      "symbol": "SMC",
-      "name": "San Miguel Corporation",
-      "as_of": "Nov 20, 2026 02:50 PM",
-      "logo_url": null,
-      "status": "Open",
-      "market_cap": 153761329926.0,
-      "outstanding_shares": 2383896588.0,
-      "listed_shares": 2340981689.0,
-      "issued_shares": 2383896588.0,
-      "free_float_pct": 20.69,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 64.5,
-      "open": 64.5,
-      "previous_close": 64.5,
-      "previous_close_date": "Nov 20, 2026",
-      "change": "up",
-      "change_amount": 0.0,
-      "change_pct": 0.0,
-      "high": 64.5,
-      "value": 4064227.5,
-      "low": 62.3,
-      "volume": 63750.0,
-      "average_price": 63.75,
-      "fifty_two_week_high": 86.0,
-      "fifty_two_week_low": 55.0
-    },
-    {
-      "symbol": "MER",
-      "name": "Manila Electric Company",
-      "as_of": "Nov 20, 2026 02:50 PM",
-      "logo_url": "https://edge.pse.com.ph/clogo/co_MER_logo.gif",
-      "status": "Open",
-      "market_cap": 448357400080.2,
-      "outstanding_shares": 1127092509.0,
-      "listed_shares": 1127271117.0,
-      "issued_shares": 1127271117.0,
-      "free_float_pct": 26.08,
-      "foreign_ownership_limit_pct": 40.0,
-      "last_traded_price": 378.0,
-      "open": 397.8,
-      "previous_close": 397.8,
-      "previous_close_date": "Nov 20, 2026",
-      "change": "down",
-      "change_amount": 19.8,
-      "change_pct": 4.98,
-      "high": 399.0,
-      "value": 410384306.0,
-      "low": 378.0,
-      "volume": 1074160.0,
-      "average_price": 382.05,
-      "fifty_two_week_high": 679.5,
-      "fifty_two_week_low": 378.0
     }
   ]
 }
