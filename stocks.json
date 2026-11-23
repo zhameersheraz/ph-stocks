@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-23 07:00:42",
+  "generated_utc": "2026-11-23 08:00:42",
   "source": "https://edge.pse.com.ph",
   "index": {
-    "as_of": "Nov 23, 2026 3:00 PM",
+    "as_of": "Nov 23, 2026 3:59 PM",
     "market_status": "CLOSED",
     "indices": [
       {
@@ -55,9 +55,9 @@
       }
     ],
     "market_summary": {
-      "Total Volume": 1288540981.0,
-      "Total Trades": 97300.0,
-      "Total Value": 11648795311.0,
+      "Total Volume": 1288667981.0,
+      "Total Trades": 97314.0,
+      "Total Value": 11671357702.0,
       "Advances": 87.0,
       "Declines": 112.0,
       "Unchanged": 56.0
