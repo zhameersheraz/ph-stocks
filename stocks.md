@@ -1,11 +1,11 @@
 # ph-stocks — Philippine Stock Exchange snapshot
 
-_Last updated: **2026-11-24 23:00:44** UTC_
+_Last updated: **2026-11-25 00:00:44** UTC_
 
 _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every hour_
 
 **Market status:** `CLOSED`  
-**As of:** Nov 24, 2026 5:30 PM  
+**As of:** Nov 25, 2026 8:00 AM  
 
 ## Indices
 
@@ -24,16 +24,16 @@ _Source: [PSE Edge](https://edge.pse.com.ph) — refreshed every hour_
 
 | Metric | Value |
 |---|---:|
-| Total Volume | 1.09B |
-| Total Trades | 83.6K |
-| Total Value | 9.73B |
-| Advances | 87 |
-| Declines | 90 |
-| Unchanged | 61 |
+| Total Volume | 0 |
+| Total Trades | 0 |
+| Total Value | 0 |
+| Advances | 0 |
+| Declines | 0 |
+| Unchanged | 0 |
 
 ## Stocks
 
-_Tracking 21 Philippine blue chips._
+_Tracking 19 Philippine blue chips._
 
 | Symbol | Last | Open | High | Low | Prev Close | Change | Volume | Value | Mkt Cap |
 |---|---:|---:|---:|---:|---:|---|---:|---:|---:|
@@ -49,12 +49,10 @@ _Tracking 21 Philippine blue chips._
 | **LTG** | ₱15.46 | ₱15.60 | ₱15.60 | ₱15.40 | ₱15.46 | ▲ +0.00 (+0.00%) | 1.28M | 19.79M | 167.30B |
 | **MBT** | ₱60.80 | ₱61.05 | ₱61.20 | ₱60.75 | ₱60.85 | ▼ -0.05 (-0.08%) | 2.28M | 138.58M | 273.67B |
 | **MEG** | ₱2.15 | ₱2.15 | ₱2.17 | ₱2.14 | ₱2.15 | ▲ +0.00 (+0.00%) | 19.13M | 41.14M | 69.72B |
-| **MER** | ₱360.00 | ₱367.00 | ₱377.80 | ₱350.20 | ₱365.60 | ▼ -5.60 (-1.53%) | 2.37M | 853.73M | 412.07B |
 | **PGOLD** | ₱39.80 | ₱39.75 | ₱39.95 | ₱39.50 | ₱39.75 | ▲ +0.05 (+0.13%) | 1.43M | 56.95M | 114.49B |
 | **RRHI** | ₱38.00 | — | — | — | ₱38.00 | — | — | — | 40.49B |
 | **SECB** | ₱60.75 | ₱60.90 | ₱61.15 | ₱60.75 | ₱60.80 | ▼ -0.05 (-0.08%) | 129.7K | 7.90M | 45.82B |
 | **SM** | ₱540.00 | ₱552.00 | ₱563.00 | ₱540.00 | ₱549.00 | ▼ -9.00 (-1.64%) | 203.0K | 111.02M | 663.84B |
-| **SMC** | ₱66.00 | ₱62.00 | ₱66.00 | ₱62.00 | ₱62.00 | ▲ +4.00 (+6.45%) | 232.3K | 15.06M | 147.80B |
 | **SMPH** | ₱16.64 | ₱17.10 | ₱17.14 | ₱16.64 | ₱16.80 | ▼ -0.16 (-0.95%) | 4.51M | 75.77M | 477.61B |
 | **TEL** | ₱960.00 | ₱956.00 | ₱969.50 | ₱953.00 | ₱945.00 | ▲ +15.00 (+1.59%) | 70.0K | 67.22M | 204.17B |
 | **URC** | ₱59.60 | ₱61.00 | ₱61.30 | ₱59.60 | ₱60.65 | ▼ -1.05 (-1.73%) | 459.6K | 27.61M | 127.98B |
